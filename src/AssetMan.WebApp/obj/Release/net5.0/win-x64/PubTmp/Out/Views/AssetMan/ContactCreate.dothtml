@@ -1,0 +1,146 @@
+﻿@viewModel AssetMan_WebApp.ViewModels.AssetMan.ContactCreateViewModel, AssetMan_WebApp
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <div class="container">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">THÊM - LIÊN HỆ</h1>
+        </div>
+        <div>
+            <div class="row">
+                <div Validator.Value="{value: Contact.LastName}"
+                     Validator.InvalidCssClass="has-error"
+                     Validator.SetToolTipText="true"
+                     class="col-4 page-input-box">
+                    <label>Họ tên lót: </label>
+                    <bp:TextBox Text="{value: Contact.LastName}" class="page-input" />
+                </div>
+                <div Validator.Value="{value: Contact.FirstName}" 
+                     Validator.InvalidCssClass="has-error"
+                     Validator.SetToolTipText="true"
+                     class="col-8 page-input-box">
+                    <label>Tên: </label>
+                    <bp:TextBox Text="{value: Contact.FirstName}" class="page-input" />
+                </div>
+            </div>
+            <div>
+                <bp:TabControl ActiveTabKey="{value: ActiveTabKey}">
+                    <bp:TabItem Key="FirstTab" HeaderText="Chi tiết">
+                        <ContentTemplate>
+                            <div class="row">
+                                <div Validator.Value="{value: Contact.JobTitle}"
+                                     Validator.InvalidCssClass="has-error"
+                                     Validator.SetToolTipText="true"
+                                     class="col page-input-box">
+                                    <label>Chức vụ: </label>
+                                    <bp:TextBox Text="{value: Contact.JobTitle}" class="page-input" />
+                                </div>
+                                <div Validator.Value="{value: Contact.Company}"
+                                     Validator.InvalidCssClass="has-error"
+                                     Validator.SetToolTipText="true"
+                                     class="col page-input-box">
+                                    <label>Công ty: </label>
+                                    <bp:TextBox Text="{value: Contact.Company}" class="page-input" />
+                                </div>
+                                <div Validator.Value="{value: Contact.Employee_ID}"
+                                     Validator.InvalidCssClass="has-error"
+                                     Validator.SetToolTipText="true"
+                                     class="col page-input-box">
+                                    <label>Mã Nhân viên: </label>
+                                    <bp:TextBox Text="{value: Contact.Employee_ID}" class="page-input" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div Validator.Value="{value: Contact.Department}"
+                                     Validator.InvalidCssClass="has-error"
+                                     Validator.SetToolTipText="true"
+                                     class="col-4 page-input-box">
+                                    <label>Bộ phận: </label>
+                                    <bp:TextBox Text="{value: Contact.Department}" class="page-input" />
+                                </div>
+
+                                <div Validator.Value="{value: Contact.WorkingTeam}"
+                                     Validator.InvalidCssClass="has-error"
+                                     Validator.SetToolTipText="true"
+                                     class="col-8 page-input-box">
+                                    <label>Đơn vị/Tổ: </label>
+                                    <bp:TextBox Text="{value: Contact.WorkingTeam}" class="page-input" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div Validator.Value="{value: Contact.BusinessPhone}"
+                                     Validator.InvalidCssClass="has-error"
+                                     Validator.SetToolTipText="true"
+                                     class="col page-input-box">
+                                    <label>ĐT Công ty </label>
+                                    <bp:TextBox Text="{value: Contact.BusinessPhone}" class="page-input" />
+                                </div>
+                                <div Validator.Value="{value: Contact.MobilePhone}"
+                                     Validator.InvalidCssClass="has-error"
+                                     Validator.SetToolTipText="true"
+                                     class="col page-input-box">
+                                    <label>ĐTDD </label>
+                                    <bp:TextBox Text="{value: Contact.MobilePhone}" class="page-input" />
+                                </div>
+                                <div Validator.Value="{value: Contact.HomePhone}"
+                                     Validator.InvalidCssClass="has-error"
+                                     Validator.SetToolTipText="true"
+                                     class="col page-input-box">
+                                    <label>ĐT nhà </label>
+                                    <bp:TextBox Text="{value: Contact.HomePhone}" class="page-input" />
+                                </div>
+
+                                <div Validator.Value="{value: Contact.EmailAddress}"
+                                     Validator.InvalidCssClass="has-error"
+                                     Validator.SetToolTipText="true"
+                                     class="col page-input-box">
+                                    <label>Email: </label>
+                                    <bp:TextBox Text="{value: Contact.EmailAddress}" class="page-input" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <div Validator.Value="{value: Contact.District}"
+                                         Validator.InvalidCssClass="has-error"
+                                         Validator.SetToolTipText="true"
+                                         class="col-4 page-input-box">
+                                        <label>Quận /Huyện </label>
+                                        <bp:TextBox Text="{value: Contact.District}" class="page-input" />
+                                    </div>
+                                    <div Validator.Value="{value: Contact.CityProvince}"
+                                         Validator.InvalidCssClass="has-error"
+                                         Validator.SetToolTipText="true"
+                                         class="col-8 page-input-box">
+                                        <label>Tỉnh thành </label>
+                                        <bp:TextBox Text="{value: Contact.CityProvince}" class="page-input" />
+                                    </div>
+                            </div>
+                        </ContentTemplate>
+                    </bp:TabItem>
+                    <bp:TabItem Key="Other" HeaderText="Ghi chú">
+                        <ContentTemplate>
+                            <div Validator.Value="{value: Contact.Notes}"
+                                 Validator.InvalidCssClass="has-error"
+                                 Validator.SetToolTipText="true"
+                                 class="page-input-box">
+                                <label>Ghi chú: </label>
+                                <bp:TextBox Text="{value: Contact.Notes}" Type="MultiLine" class="page-input" />
+                            </div>
+
+                        </ContentTemplate>
+                    </bp:TabItem>
+                </bp:TabControl>
+            </div>
+
+            <div>
+                <p>{{value: ValidationgMessagesText}}</p>
+            </div>
+
+        </div>
+        <div>
+            <bp:Button Text="Thêm mới" Click="{command: ThemMoiContact()}" class="page-button" />
+            <bp:Button Text="Hủy" Click="{command: QuayLaiDanhSach()}" class="page-button" />
+        </div>
+    </div>
+
+</dot:Content>
+

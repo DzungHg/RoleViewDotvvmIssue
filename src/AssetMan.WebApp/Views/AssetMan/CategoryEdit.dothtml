@@ -1,0 +1,36 @@
+﻿@viewModel AssetMan_WebApp.ViewModels.AssetMan.CategoryEditViewModel, AssetMan_WebApp
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <div class="container">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">SỬA - DANH MỤC</h1>
+        </div>
+        <div>
+            <div>
+                <span>SEQ: </span>
+                <dot:Literal Text="{value: Category.Category_ID}" />
+            </div>
+            <div Validator.Value="{value: Category.Category_Name}"
+                 Validator.InvalidCssClass="has-error"
+                 Validator.SetToolTipText="true"
+                 class="page-input-box">
+                <label>Tên nơi chốn: </label>
+                <bp:TextBox Text="{value: Category.Category_Name}" class="page-input" />
+            </div>
+
+       
+            <div>
+                <p>{{value: ValidationMessagesText}}</p>
+            </div>
+            <div>
+                <bp:Button Text="Sửa" Click="{command: EditCategory()}" class="page-button" />
+                <bp:Button Text="Hủy" Click="{command: Huy()}" class="page-button" />
+            </div>
+
+
+        </div>
+    </div>
+
+</dot:Content>
+

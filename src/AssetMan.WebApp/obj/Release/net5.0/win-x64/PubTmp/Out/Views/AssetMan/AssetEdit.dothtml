@@ -1,0 +1,170 @@
+﻿@viewModel AssetMan_WebApp.ViewModels.AssetMan.AssetEditlViewModel, AssetMan_WebApp
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <div class="container">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">SỬA - TÀI SẢN</h1>
+        </div>
+        <div>
+            <div class="row">
+                <div Validator.Value="{value: Asset.Item}"
+                     Validator.InvalidCssClass="has-error"
+                     Validator.SetToolTipText="true"
+                     class="col-4 page-input-box">
+                    <label>Tài sản: </label>
+                    <bp:TextBox Text="{value: Asset.Item}" class="page-input" />
+                </div>
+
+                <div Validator.Value="{value: Asset.CategoryFinance_FK}"
+                     Validator.InvalidCssClass="has-error"
+                     Validator.SetToolTipText="true"
+                     class="col-4 page-input-box">
+                    <label>Phân tài sản theo Kế toán: </label>
+                    <bp:ComboBox DataSource="{value: CategoryInFinanceList }"
+                                 SelectedValue="{value: SelectedCategoryInFinance}"
+                                 ItemTextBinding="{value: Category_Name}"
+                                 ItemKeyBinding="{value: Category_ID}"
+                                 Placeholder="Chọn Danh mục trong Kế toán" />
+                </div>
+
+                <div Validator.Value="{value: Asset.Category_FK}"
+                     Validator.InvalidCssClass="has-error"
+                     Validator.SetToolTipText="true"
+                     class="col-4 page-input-box">
+                    <label>Danh mục: </label>
+                    <bp:ComboBox DataSource="{value: CategoryList }"
+                                 SelectedValue="{value: SelectedCategory}"
+                                 ItemTextBinding="{value: Category_Name}"
+                                 ItemKeyBinding="{value: Category_ID}"
+                                 Placeholder="Chọn Danh mục" />
+                </div>
+            </div>
+            <div Validator.Value="{value: Asset.Item}"
+                 Validator.InvalidCssClass="has-error"
+                 Validator.SetToolTipText="true"
+                 class="page-input-box">
+                <label>Mã kiểm soát: </label>
+                <bp:TextBox Text="{value: Asset.ControlCode}" class="page-input" />
+            </div>
+            <div>
+                <bp:TabControl ActiveTabKey="{value: ActiveTabKey}">
+                    <bp:TabItem Key="FirstTab" HeaderText="Chi tiết">
+                        <ContentTemplate>
+                            <div class="row">
+                                <div Validator.Value="{value: Asset.Manufacturer}"
+                                     Validator.InvalidCssClass="has-error"
+                                     Validator.SetToolTipText="true"
+                                     class="col page-input-box">
+                                    <span>Nhà sản xuất: </span>
+                                    <bp:TextBox Text="{value: Asset.Manufacturer}" class="page-input" />
+                                </div>
+                                <div Validator.Value="{value: Asset.Model}"
+                                     Validator.InvalidCssClass="has-error"
+                                     Validator.SetToolTipText="true"
+                                     class="col page-input-box">
+                                    <label>Model: </label>
+                                    <bp:TextBox Text="{value: Asset.Model}" class="page-input" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div Validator.Value="{value: Asset.AcquiredDate}"
+                                     Validator.InvalidCssClass="has-error"
+                                     Validator.SetToolTipText="true"
+                                     class="col page-input-box">
+                                    <label>Ngày tiếp nhận: </label>
+                                    <bp:DatePicker SelectedDate="{value: Asset.AcquiredDate}"
+                                                   FormatString="dd MMM yyyy" />
+                                </div>
+                                <div Validator.Value="{value: Asset.PurchasePrice}"
+                                     Validator.InvalidCssClass="has-error"
+                                     Validator.SetToolTipText="true"
+                                     class="col page-input-box">
+                                    <label>Giá mua: </label>
+                                    <bp:TextBox Text="{value: Asset.PurchasePrice}" Type="Number" class="page-input" />
+                                </div>
+                            </div>
+
+                            <div Validator.Value="{value: Asset.CurrentValue}"
+                                 Validator.InvalidCssClass="has-error"
+                                 Validator.SetToolTipText="true"
+                                 class="page-input-box">
+                                <label>Trị giá hiện tại: </label>
+                                <bp:TextBox Text="{value: Asset.CurrentValue}" Type="Number" class="page-input" />
+                            </div>
+                            <div Validator.Value="{value: Asset.Condition}"
+                                 Validator.InvalidCssClass="has-error"
+                                 Validator.SetToolTipText="true"
+                                 class="page-input-box">
+                                <label>Điều kiện hiện tại: </label>
+                            </div>
+                            <div>
+                                <bp:RadioButton CheckedItem="{value: SelectedCondition}" CheckedValue="{value:1}" Text="Rất tốt" />
+                                <bp:RadioButton CheckedItem="{value: SelectedCondition}" CheckedValue="{value:2}" Text="Tốt" />
+                                <bp:RadioButton CheckedItem="{value: SelectedCondition}" CheckedValue="{value:3}" Text="Bình thường" />
+                                <bp:RadioButton CheckedItem="{value: SelectedCondition}" CheckedValue="{value:4}" Text="Xấu" />
+                                <bp:RadioButton CheckedItem="{value: SelectedCondition}" CheckedValue="{value:5}" Text="Rất xấu" />
+                            </div>
+                            <div Validator.Value="{value: Asset.Location_FK}"
+                                 Validator.InvalidCssClass="has-error"
+                                 Validator.SetToolTipText="true"
+                                 class="page-input-box">
+                                <label>Nơi đặt, giữ: </label>
+                                <bp:ComboBox DataSource="{value: LocationList }"
+                                             SelectedValue="{value: SelectedLocation}"
+                                             ItemTextBinding="{value: Location_Name}"
+                                             ItemKeyBinding="{value: Location_SEQ}"
+                                             Placeholder="Chọn Nơi" />
+                            </div>
+                            <div Validator.Value="{value: Asset.Owner_FK}"
+                                 Validator.InvalidCssClass="has-error"
+                                 Validator.SetToolTipText="true"
+                                 class="page-input-box">
+                                <label>Người chịu trách nhiệm: </label>
+                                <bp:ComboBox DataSource="{value: ContactList  }"
+                                             SelectedValue="{value: SelectedContact}"
+                                             ItemTextBinding="{value: FirstName}"
+                                             ItemKeyBinding="{value: ID}"
+                                             Placeholder="Chọn Người" />
+                            </div>
+                            <div Validator.Value="{value: Asset.Description}"
+                                 Validator.InvalidCssClass="has-error"
+                                 Validator.SetToolTipText="true"
+                                 class="page-input-box">
+                                <label>Diễn giải: </label>
+                                <bp:TextBox Text="{value: Asset.Description}" Type="MultiLine" class="page-input" />
+                            </div>
+                        </ContentTemplate>
+                    </bp:TabItem>
+                    <bp:TabItem Key="Other" HeaderText="Ghi chú">
+                        <ContentTemplate>
+                            <div Validator.Value="{value: Asset.Comments}"
+                                 Validator.InvalidCssClass="has-error"
+                                 Validator.SetToolTipText="true"
+                                 class="page-input-box">
+                                <label>Nhận xét, ghi chú: </label>
+                                <bp:TextBox Text="{value: Asset.Comments}" Type="MultiLine" class="page-input" />
+                            </div>
+
+                        </ContentTemplate>
+                    </bp:TabItem>
+                </bp:TabControl>
+            </div>
+
+            <div>
+                <p>{{value: ValidationgMessagesText}}</p>
+            </div>
+            <div>
+                <bp:Button Text="Sửa" Click="{command: Sua()}" Enabled="{value: SuaButtonEnabled}" class="page-button" />
+                <bp:Button Text="Ghi lại" Click="{command: GhiLaiTaiSan()}" Enabled="{value: GhiLaiButtonEnabled}" class="page-button" />
+                <bp:Button Text="Không ghi" Click="{command: KhongGhi()}" Enabled="{value: KhongGhiButtonEnabled}" class="page-button" />
+                <bp:Button Text="Hủy" Click="{command: Huy()}" class="page-button" />
+                <bp:Button Text="Quay lại danh sách" Click="{command: QuayLaiDanhSach()}" class="page-button" />
+            </div>
+
+
+        </div>
+    </div>
+
+</dot:Content>
+

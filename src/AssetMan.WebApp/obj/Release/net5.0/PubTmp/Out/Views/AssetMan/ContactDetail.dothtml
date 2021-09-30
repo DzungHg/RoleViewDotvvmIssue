@@ -1,0 +1,79 @@
+﻿@viewModel AssetMan_WebApp.ViewModels.AssetMan.ContactDetailViewModel, AssetMan_WebApp
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <div class="container">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">CHI TIẾT - LIÊN HỆ</h1>
+        </div>
+        <div>
+            <div>
+                <span>SEQ: </span>
+                <dot:Literal Text="{value: Contact.ID}" />
+            </div>
+            <div>
+                <span>Họ vàTên: </span>
+                <dot:Literal Text="{value: Contact.LastName}" />
+                <span> </span>
+                <dot:Literal Text="{value: Contact.FirstName}" />
+            </div>
+            <div>
+                <span>Chức vụ: </span>
+                <dot:Literal Text="{value: Contact.JobTitle}" />
+            </div>
+            <div>
+                <span>Mã nhân viên (nội bộ): </span>
+                <dot:Literal Text="{value: Contact.Employee_ID}" />
+            </div>
+            <div>
+                <span>Công ty: </span>
+                <dot:Literal Text="{value: Contact.Company}" />
+            </div>
+            <div>
+                <span>Bộ phận: </span>
+                <dot:Literal Text="{value: Contact.Department}" />
+            </div>
+            <div>
+                <span>Đội nhóm: </span>
+                <dot:Literal Text="{value: Contact.WorkingTeam}" />
+            </div>
+
+            <div>
+                <span>ĐT Công ty: </span>
+                <dot:Literal Text="{value: Contact.BusinessPhone}" />
+            </div>
+            <div>
+                <span>ĐTDD: </span>
+                <dot:Literal Text="{value: Contact.MobilePhone}" />
+            </div>
+            <div>
+                <span>ĐT nhà: </span>
+                <dot:Literal Text="{value: Contact.HomePhone}" />
+            </div>
+            <div>
+                <span>Diễn giải: </span>
+                <dot:Literal Text="{value: Contact.EmailAddress}" />
+            </div>
+            <div>
+                <span>Địa chỉ: </span>
+                <p>{{value: Contact.Address}}</p>
+                <span> </span>
+                <dot:Literal Text="{value: Contact.District}" />
+                <span> </span>
+                <dot:Literal Text="{value: Contact.CityProvince}" />
+            </div>
+            <div>
+                <span>Ghi chú: </span>
+                <dot:Literal Text="{value: Contact.Notes}" />
+            </div>
+            <div>
+                <bp:Button Text="Sửa" Click="{command: EditContact(Contact.ID)}" class="page-button" />
+                <bp:Button Text="Hủy" Click="{command: QuayLaiDanhSach()}" class="page-button" />
+            </div>
+
+
+        </div>
+    </div>
+
+</dot:Content>
+

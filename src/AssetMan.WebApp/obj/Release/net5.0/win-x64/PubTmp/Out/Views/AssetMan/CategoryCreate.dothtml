@@ -1,0 +1,39 @@
+﻿@viewModel AssetMan_WebApp.ViewModels.AssetMan.CategoryCreateViewModel, AssetMan_WebApp
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <div class="container">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">THÊM - Danh mục</h1>
+        </div>
+        <div>
+            <div Validator.Value="{value: Category_ID}"
+                 Validator.InvalidCssClass="has-error"
+                 Validator.SetToolTipText="true"
+                 class="page-input-box">
+                <label>ID: </label>
+                <bp:TextBox Text="{value: Category_ID}" class="page-input" />
+            </div>
+            <div Validator.Value="{value: Category_Name}"
+                 Validator.InvalidCssClass="has-error"
+                 Validator.SetToolTipText="true"
+                 class="page-input-box">
+                <label>Tên danh mục: </label>
+                <bp:TextBox Text="{value: Category_Name}" class="page-input" />
+            </div>
+
+            <div>
+                <p>{{value: ValidationMessagesText}}</p>
+            </div>
+            <div>
+                <bp:Button Text="Thêm mới" Click="{command: ThemMoiCategory()}" class="page-button" />
+                <dot:RouteLink Text="Hủy" RouteName="AssetList" class="page-button" />
+              
+            </div>
+
+
+        </div>
+    </div>
+
+</dot:Content>
+

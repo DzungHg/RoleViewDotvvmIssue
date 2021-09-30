@@ -1,0 +1,85 @@
+﻿@viewModel AssetMan_WebApp.ViewModels.AssetMan.AssetDetailViewModel, AssetMan_WebApp
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <div class="container">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">THÊM - TÀI SẢN</h1>
+        </div>
+        <div>
+            <span>Tài sản: </span>
+            <dot:Literal Text="{value: Asset.Item}" />
+        </div>
+       
+        <bp:TabControl ActiveTabKey="{value: ActiveTabKey}">
+            <bp:TabItem Key="FirstTab" HeaderText="Chi tiết">
+                <ContentTemplate>
+                    <div>
+                        <span>Danh mục Kế toán: </span>
+                        <dot:Literal Text="{value: Asset.CategoryInFinance_Name}" />
+                    </div>
+                    <div>
+                        <span>Danh mục: </span>
+                        <dot:Literal Text="{value: Asset.Category_Name}" />
+                    </div>
+                    <div>
+                        <span>Nhà sản xuất: </span>
+                        <dot:Literal Text="{value: Asset.Manufacturer}" />
+                    </div>
+                    <div>
+                        <span>Model: </span>
+                        <dot:Literal Text="{value: Asset.Model}" />
+                    </div>
+                    <div>
+                        <span>Ngày nhận tài sản: </span>
+                        <dot:Literal Text="{value:  Asset.AcquiredDate}" />
+                    </div>
+                    <div>
+                        <span>Trị giá mua: </span>
+                        <dot:Literal Text="{value:  Asset.PurchasePrice}" />
+                    </div>                    
+                    <div> 
+                        <span>Trị giá hiện tại: </span>
+                        <dot:Literal Text="{value: Asset.CurrentValue}"/>
+                    </div>
+                    <div>
+                        <span>Hiện trạng tài sản: </span>
+                        <dot:Literal Text="{value: Asset.Condition_Name}" />
+                    </div>
+                    <div>
+                        <span>Nơi đặt: </span>
+                        <dot:Literal Text="{value: Asset.Location_Name}" />
+                    </div>
+                    <div>
+                        <span>Người chịu trách nhiệm: </span>
+                        <dot:Literal Text="{value: Asset.Owner_Name}" />
+                    </div>
+                  
+                    <div>
+                        <span>Diễn giải: </span>
+                        <dot:Literal Text="{value: Asset.Description}" />
+                    </div>
+                </ContentTemplate>
+            </bp:TabItem>
+            <bp:TabItem Key="Other" HeaderText="Ghi chú">
+                <ContentTemplate>
+                    <div>
+                        <span>Nhận xét, ghi chú </span>
+                        <dot:Literal Text="{value: Asset.Comments}" />
+                    </div>
+
+                </ContentTemplate>
+            </bp:TabItem>
+        </bp:TabControl>
+        <hr />
+        <div>
+            <bp:Button Text="Sửa" Click="{command: EditAsset(Asset.ID)}" class="page-button" />
+            <bp:Button Text="Quay lại danh sách" Click="{command: QuayLaiDanhSach()}" class="page-button" />
+        </div>
+
+
+    </div>
+    
+
+</dot:Content>
+
