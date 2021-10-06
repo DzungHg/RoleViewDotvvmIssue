@@ -1,0 +1,44 @@
+﻿@viewModel AssetMan_WebApp.ViewModels.AssetMan.LocationEditViewModel, AssetMan_WebApp
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <div class="container">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">SỬA- VỊ TRÍ/NƠI</h1>
+        </div>
+        <div>
+            <div>
+                <span>SEQ: </span>
+                <dot:Literal Text="{value: Location.Location_SEQ}" />
+            </div>
+            <div Validator.Value="{value: Location.Location_Name}"
+                 Validator.InvalidCssClass="has-error"
+                 Validator.SetToolTipText="true"
+                 class="page-input-box">
+                <label>Tên nơi chốn: </label>
+                <bp:TextBox Text="{value: Location.Location_Name}" class="page-input" />
+            </div>
+
+
+            <div Validator.Value="{value: Location.Description}"
+                 Validator.InvalidCssClass="has-error"
+                 Validator.SetToolTipText="true"
+                 class="page-input-box">
+                <label>Diễn giải </label>
+                <bp:TextBox Text="{value: Location.Description}" Type="MultiLine" class="page-input" />
+            </div>
+
+            <div>
+                <p>{{value: ValidationMessagesText}}</p>
+            </div>
+            <div>
+                <bp:Button Text="Sửa" Click="{command: EditLocation()}" class="page-button" />
+                <bp:Button Text="Hủy" Click="{command: Huy()}" class="page-button" />
+            </div>
+
+
+        </div>
+    </div>
+
+</dot:Content>
+

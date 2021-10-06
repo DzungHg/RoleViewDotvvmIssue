@@ -1,0 +1,33 @@
+﻿@viewModel AssetMan_WebApp.ViewModels.AssetMan.LocationDetailViewModel, AssetMan_WebApp
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <div class="container">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">CHI TIẾT - VỊ TRÍ</h1>
+        </div>
+        <div>
+            <div>
+                <span>SEQ: </span>
+                <dot:Literal Text="{value: Location.Location_SEQ}" />
+            </div>
+            <div>
+                <span>Tên vị trí: </span>
+                <dot:Literal Text="{value: Location.Location_Name}" />               
+            </div>
+            <div>              
+                <span>Diễn giải: </span>
+                <dot:Literal Text="{value:Location.Description}" />
+            </div>
+
+            <div>
+                <bp:Button Text="Sửa" Click="{command: EditLocation(Location.Location_SEQ)}" class="page-button" />
+                <bp:Button Text="Hủy" Click="{command: QuayLaiDanhSach()}" class="page-button" />
+            </div>
+
+
+        </div>
+    </div>
+
+</dot:Content>
+

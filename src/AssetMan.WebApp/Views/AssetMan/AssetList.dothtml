@@ -1,0 +1,51 @@
+﻿@viewModel AssetMan_WebApp.ViewModels.AssetMan.AssetListViewModel, AssetMan_WebApp
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <%-- khu này nằm trong vùng nội dung --%>
+    <div class="container">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">DANH SÁCH - TÀI SẢN</h1>
+        </div>
+        <div>
+
+            <div class="">
+                <label>Danh mục tài sản: </label>
+                <bp:ComboBox DataSource="{value: CateogryList }"
+                             SelectedValue="{value: SelectedCategory}"
+                             ItemTextBinding="{value:Category_Name}"
+                             ItemKeyBinding="{value: Category_ID}"
+                             Changed="{command: CategoriesComboChanged()}"
+                             Placeholder="Chọn danh mục" />
+                <dot:RouteLink Text="Thêm Tài sản" RouteName="AssetCreate" class="page-button btn-add btn-long" />
+            </div>
+            <br />
+            <bp:GridView DataSource="{value: Assets}">
+                <Columns>
+                    <bp:GridViewTextColumn Value="{value: ID}" HeaderText="ID" />
+                    <bp:GridViewTextColumn Value="{value: Item}" HeaderText="Tài sản" />
+                    <bp:GridViewTextColumn Value="{value: CategoryInFinance_Name}" HeaderText="Theo Kế toán" />
+                    <bp:GridViewTextColumn Value="{value: Category_Name}" HeaderText="Danh mục" />
+                    <bp:GridViewTextColumn Value="{value: Location_Name}" HeaderText="Nơi đặt" />
+                    <bp:GridViewTextColumn Value="{value: Description }" HeaderText="Diễn giải" />
+                    <bp:GridViewTemplateColumn CssClass="button-column">
+                        <dot:RouteLink RouteName="AssetDetail" Text="Chi tiết" Param-Id="{value: ID}" />
+                    </bp:GridViewTemplateColumn>
+
+                </Columns>
+                <FooterTemplate>
+                </FooterTemplate>
+                <EmptyDataTemplate>
+                    Chưa có dữ liệu, bạn cần nhập vô.
+                </EmptyDataTemplate>
+            </bp:GridView>
+            <hr />
+            <div class="uk-grid">
+                <div>
+                    <bp:DataPager DataSet="{value: Assets}" class="pager" RenderLinkForCurrentPage="true" />
+                </div>
+            </div>
+        </div>
+    </div>
+</dot:Content>
+

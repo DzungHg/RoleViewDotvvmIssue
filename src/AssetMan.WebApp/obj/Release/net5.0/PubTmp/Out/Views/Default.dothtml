@@ -1,0 +1,14 @@
+﻿@viewModel AssetMan_WebApp.ViewModels.DefaultViewModel, AssetMan_WebApp
+@masterPage Views/MasterPage.dotmaster
+@import AssetMan_WebApp.Resources
+<dot:Content ContentPlaceHolderID="MainContent">
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item"><dot:RouteLink RouteName="AssetList" Text="Tài sản" /></li>
+            <li class="list-group-item"><dot:RouteLink RouteName="ContactList" Text="Liên hệ" /></li>
+            <li class="list-group-item"><dot:RouteLink RouteName="LocationList" Text="Vị trí" /></li>
+            <li class="list-group-item"><dot:RouteLink RouteName="CategoryList" Text="Danh mục" /></li>
+        </ul>
+    </div>
+
+</dot:Content>
