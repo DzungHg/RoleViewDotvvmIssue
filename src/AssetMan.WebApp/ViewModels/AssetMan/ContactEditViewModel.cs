@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.ViewModel;
-using AssetMan.UseCases.Interfaces;
+using AssetMan.UseCases.ContactScreen;
 using AssetMan.UseCases.DTO;
 
 namespace AssetMan_WebApp.ViewModels.AssetMan
 {
     public class ContactEditViewModel : AssetMan_WebApp.ViewModels.MasterPageViewModel
     {
-        private readonly IContactUpdateUseCase contactUpdateUseCase;
-        private readonly IContactGetByIdUseCase contactGetByIdUseCase;
+        private readonly IUpdateContactUseCase contactUpdateUseCase;
+        private readonly IGetContactByIdUseCase contactGetByIdUseCase;
 
-        public ContactEditViewModel(IContactUpdateUseCase contactUpdateUseCase, IContactGetByIdUseCase contactGetByIdUseCase)
+        public ContactEditViewModel(IUpdateContactUseCase contactUpdateUseCase, IGetContactByIdUseCase contactGetByIdUseCase)
         {
 
             this.contactUpdateUseCase = contactUpdateUseCase;
@@ -29,7 +29,7 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
             int id = 0;
             if (int.TryParse(Context.Parameters["Id"].ToString(), out id))
             {
-                this.Contact = contactGetByIdUseCase.Execute(id);
+                this.Contact = contactGetByIdUseCase.Execute(id).Result;
             }
 
             //int id = Convert.ToInt32(Context.Parameters["id"]);

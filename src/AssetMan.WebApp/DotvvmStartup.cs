@@ -18,7 +18,15 @@ namespace AssetMan.WebApp
 
         private void ConfigureRoutes(DotvvmConfiguration config, string applicationPath)
         {
-            config.RouteTable.Add("AssetList", "asset/danh-sach-tai-san", "Views/AssetMan/AssetList.dothtml");           
+            //authentication:
+            config.RouteTable.Add("SetUpRoles", "authentication/cai-dat-admin", "Views/Authentication/SetUpRoles.dothtml");
+            config.RouteTable.Add("UsersRolesAssign", "authentication/nguoi-dung-va-vai-tro", "Views/Authentication/UsersRolesAssign.dothtml");
+            //
+          
+                     
+            //Thêm route
+
+            config.RouteTable.Add("AssetList", "asset/danh-sach-tai-san", "Views/AssetMan/AssetList.dothtml");
             config.RouteTable.Add("AssetDetail", "asset/chi-tiet-tai-san/{id?}", "Views/AssetMan/AssetDetail.dothtml");
             config.RouteTable.Add("AssetEdit", "asset/sua-tai-san/{id?}", "Views/AssetMan/AssetEdit.dothtml");
             config.RouteTable.Add("AssetCreate", "asset/them-tai-san", "Views/AssetMan/AssetCreate.dothtml");
@@ -38,7 +46,7 @@ namespace AssetMan.WebApp
             config.RouteTable.Add("CategoryCreate", "asset/them-danh-muc", "Views/AssetMan/CategoryCreate.dothtml");
             //Gốc:
             config.RouteTable.Add("Default", "", "Views/Default.dothtml");
-            config.RouteTable.AutoDiscoverRoutes(new DefaultRouteStrategy(config));    
+            config.RouteTable.AutoDiscoverRoutes(new DefaultRouteStrategy(config));
         }
 
         private void ConfigureControls(DotvvmConfiguration config, string applicationPath)
@@ -48,6 +56,42 @@ namespace AssetMan.WebApp
 
         private void ConfigureResources(DotvvmConfiguration config, string applicationPath)
         {
+            //Đăng ký riêng:
+
+
+            config.Resources.Register("BootstrapCSS", new StylesheetResource()
+            {
+                Location = new UrlResourceLocation("~/Resources/assets/css/bootstrap.min.css")
+            });
+            config.Resources.Register("DashBoardCSS", new StylesheetResource()
+            {
+                Location = new UrlResourceLocation("~/Resources/assets/css/dashboard.css")
+            });
+            config.Resources.Register("SideBarsCSS", new StylesheetResource()
+            {
+                Location = new UrlResourceLocation("~/Resources/assets/css/sidebars.css")
+            });
+
+            // register custom resources and adjust paths to the built-in resources
+            config.Resources.Register("Styles", new StylesheetResource()
+            {
+                Location = new UrlResourceLocation("~/Resources/style.css")
+            });
+
+            config.Resources.Register("BootstrapBundleJS", new ScriptResource()
+            {
+                Location = new UrlResourceLocation("~/Resources/assets/js/bootstrap.bundle.min.js"),
+
+            });
+            config.Resources.Register("SideBarsJS", new ScriptResource()
+            {
+                Location = new UrlResourceLocation("~/Resources/assets/js/sidebars.js"),
+
+            });
+            
+            
+            // Bản default
+
             // register custom resources and adjust paths to the built-in resources
             config.Resources.Register("bootstrap-css", new StylesheetResource
             {

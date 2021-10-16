@@ -1,0 +1,12 @@
+F:\My Programming Projects\AssetManagement\src\AssetMan.CoreBusiness\bin\Release\net5.0\AssetMan.CoreBusiness.deps.json
+F:\My Programming Projects\AssetManagement\src\AssetMan.CoreBusiness\bin\Release\net5.0\AssetMan.CoreBusiness.dll
+F:\My Programming Projects\AssetManagement\src\AssetMan.CoreBusiness\bin\Release\net5.0\ref\AssetMan.CoreBusiness.dll
+F:\My Programming Projects\AssetManagement\src\AssetMan.CoreBusiness\bin\Release\net5.0\AssetMan.CoreBusiness.pdb
+F:\My Programming Projects\AssetManagement\src\AssetMan.CoreBusiness\obj\Release\net5.0\AssetMan.CoreBusiness.csproj.AssemblyReference.cache
+F:\My Programming Projects\AssetManagement\src\AssetMan.CoreBusiness\obj\Release\net5.0\AssetMan.CoreBusiness.GeneratedMSBuildEditorConfig.editorconfig
+F:\My Programming Projects\AssetManagement\src\AssetMan.CoreBusiness\obj\Release\net5.0\AssetMan.CoreBusiness.AssemblyInfoInputs.cache
+F:\My Programming Projects\AssetManagement\src\AssetMan.CoreBusiness\obj\Release\net5.0\AssetMan.CoreBusiness.AssemblyInfo.cs
+F:\My Programming Projects\AssetManagement\src\AssetMan.CoreBusiness\obj\Release\net5.0\AssetMan.CoreBusiness.csproj.CoreCompileInputs.cache
+F:\My Programming Projects\AssetManagement\src\AssetMan.CoreBusiness\obj\Release\net5.0\AssetMan.CoreBusiness.dll
+F:\My Programming Projects\AssetManagement\src\AssetMan.CoreBusiness\obj\Release\net5.0\ref\AssetMan.CoreBusiness.dll
+F:\My Programming Projects\AssetManagement\src\AssetMan.CoreBusiness\obj\Release\net5.0\AssetMan.CoreBusiness.pdb

@@ -1,0 +1,17 @@
+﻿@viewModel AssetMan_WebApp.ViewModels.Authentication.UsersRolesAssignViewModel, AssetMan_WebApp
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+  
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">NGƯỜI DÙNG - VAI TRÒ</h1>
+        </div>
+        <dot:Repeater DataSource="{value: UserWithRolesList  }">
+            <ItemTemplate>
+                <p><span>{{value: UserName}}: </span> {{value: RoleList}}</p>
+            </ItemTemplate>
+        </dot:Repeater>
+  
+
+</dot:Content>
+

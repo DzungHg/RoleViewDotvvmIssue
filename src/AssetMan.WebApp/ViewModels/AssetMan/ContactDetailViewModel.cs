@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.ViewModel;
-using AssetMan.UseCases.Interfaces;
+using AssetMan.UseCases.ContactScreen;
 using AssetMan.UseCases.DTO;
 
 namespace AssetMan_WebApp.ViewModels.AssetMan
 {
     public class ContactDetailViewModel : AssetMan_WebApp.ViewModels.MasterPageViewModel
     {
-        private readonly IContactGetByIdUseCase contactGetByIdUseCase;
+        private readonly IGetContactByIdUseCase contactGetByIdUseCase;
        
 
-        public ContactDetailViewModel(IContactGetByIdUseCase contactGetByIdUseCase)
+        public ContactDetailViewModel(IGetContactByIdUseCase contactGetByIdUseCase)
         {
 
             this.contactGetByIdUseCase = contactGetByIdUseCase;
@@ -28,7 +28,7 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
             int id = 0;
             if (int.TryParse(Context.Parameters["Id"].ToString(), out id))
             {
-                this.Contact = contactGetByIdUseCase.Execute(id);
+                this.Contact = contactGetByIdUseCase.Execute(id).Result;
             }
 
             //int id = Convert.ToInt32(Context.Parameters["id"]);

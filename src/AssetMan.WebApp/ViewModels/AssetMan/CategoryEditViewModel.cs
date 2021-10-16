@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using AssetMan.UseCases.Interfaces;
+using AssetMan.UseCases.CategoryScreen;
 using AssetMan.UseCases.DTO;
 
 namespace AssetMan_WebApp.ViewModels.AssetMan
 {
     public class CategoryEditViewModel : AssetMan_WebApp.ViewModels.MasterPageViewModel
     {
-        private readonly ICategoryUpdateUseCase categoryUpdateUseCase;
-        private readonly ICategoryGetByIdUseCase categoryGetByIdUseCase;
+        private readonly IUpdateCategoryUseCase categoryUpdateUseCase;
+        private readonly IGetCategoryByIdUseCase categoryGetByIdUseCase;
 
-        public CategoryEditViewModel(ICategoryUpdateUseCase categoryUpdateUseCase, ICategoryGetByIdUseCase categoryGetByIdUseCase)
+        public CategoryEditViewModel(IUpdateCategoryUseCase categoryUpdateUseCase, IGetCategoryByIdUseCase categoryGetByIdUseCase)
         {
 
             this.categoryUpdateUseCase = categoryUpdateUseCase;
@@ -29,7 +29,7 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
                 string id = "";
                 id = Context.Parameters["Id"].ToString();
 
-                this.Category = categoryGetByIdUseCase.Execute(id);
+                this.Category = categoryGetByIdUseCase.Execute(id).Result;
 
 
                 //int id = Convert.ToInt32(Context.Parameters["id"]);

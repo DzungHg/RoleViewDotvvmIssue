@@ -3,12 +3,23 @@
 @import AssetMan_WebApp.Resources
 <dot:Content ContentPlaceHolderID="MainContent">
     <div class="container">
-        <ul class="list-group">
-            <li class="list-group-item"><dot:RouteLink RouteName="AssetList" Text="Tài sản" /></li>
-            <li class="list-group-item"><dot:RouteLink RouteName="ContactList" Text="Liên hệ" /></li>
-            <li class="list-group-item"><dot:RouteLink RouteName="LocationList" Text="Vị trí" /></li>
-            <li class="list-group-item"><dot:RouteLink RouteName="CategoryList" Text="Danh mục" /></li>
-        </ul>
+        <%-- Role View is here! --%>
+        <!--Role View is here-->
+        <dot:RoleView Roles="SuperAdmin,Admin" HideForAnonymousUsers="false">
+            <IsMemberTemplate>
+                <ul class="list-group">
+                    <li class="list-group-item"><dot:RouteLink RouteName="AssetList" Text="Tài sản" /></li>
+                    <li class="list-group-item"><dot:RouteLink RouteName="ContactList" Text="Liên hệ" /></li>
+                    <li class="list-group-item"><dot:RouteLink RouteName="LocationList" Text="Vị trí" /></li>
+                    <li class="list-group-item"><dot:RouteLink RouteName="CategoryList" Text="Danh mục" /></li>
+                </ul>
+            </IsMemberTemplate>
+            <IsNotMemberTemplate>
+                <h3>You are not membership!</h3>
+                <p>You can not see the contents</p>
+            </IsNotMemberTemplate>
+        </dot:RoleView>       
+
     </div>
 
 </dot:Content>

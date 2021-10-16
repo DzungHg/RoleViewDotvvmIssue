@@ -77,3 +77,257 @@ F:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\
 F:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AsseMan.Plugins.Repository.SqliteDb.pdb
 F:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan.UseCases.pdb
 F:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan.CoreBusiness.pdb
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.csproj.AssemblyReference.cache
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.Resources.Texts.resources
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.csproj.GenerateResource.cache
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.AssemblyInfoInputs.cache
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.AssemblyInfo.cs
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.csproj.CoreCompileInputs.cache
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.MvcApplicationPartsAssemblyInfo.cache
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\ref\AssetMan_WebApp.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.pdb
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\appsettings.json
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\libman.json
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.exe
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.deps.json
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.runtimeconfig.json
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.runtimeconfig.dev.json
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\ref\AssetMan_WebApp.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.pdb
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Ben.Demystifier.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Framework.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Framework.Hosting.AspNetCore.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.Core.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Core.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Utils.HtmlElements.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\System.CodeDom.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\cs-cz\DotVVM.BusinessPack.resources.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\staticwebassets\AssetMan_WebApp.StaticWebAssets.Manifest.cache
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\staticwebassets\AssetMan_WebApp.StaticWebAssets.xml
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\scopedcss\bundle\AssetMan_WebApp.styles.css
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.RazorTargetAssemblyInfo.cache
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.csproj.CopyComplete
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.genruntimeconfig.cache
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\ClosedXML.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.DynamicData.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.Export.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.Export.Csv.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.Export.Excel.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Framework.Controls.DynamicData.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Framework.Controls.DynamicData.Annotations.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\ExcelNumberFormat.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\System.IO.Packaging.dll
+D:\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Resources\assets\img\favicons\manifest.json
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.csproj.AssemblyReference.cache
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.Resources.Texts.resources
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.csproj.GenerateResource.cache
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.AssemblyInfoInputs.cache
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.AssemblyInfo.cs
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.csproj.CoreCompileInputs.cache
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.MvcApplicationPartsAssemblyInfo.cache
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\ref\AssetMan_WebApp.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.pdb
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\appsettings.json
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\libman.json
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.exe
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.deps.json
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.runtimeconfig.json
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.runtimeconfig.dev.json
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\ref\AssetMan_WebApp.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.pdb
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AutoMapper.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Ben.Demystifier.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\ClosedXML.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Framework.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Framework.Hosting.AspNetCore.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.Core.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.DynamicData.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.Export.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.Export.Csv.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.Export.Excel.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Core.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Framework.Controls.DynamicData.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Framework.Controls.DynamicData.Annotations.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Utils.HtmlElements.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\ExcelNumberFormat.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\System.CodeDom.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\System.IO.Packaging.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\cs-cz\DotVVM.BusinessPack.resources.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan.CoreBusiness.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan.UseCases.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan.UseCases.pdb
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan.CoreBusiness.pdb
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\staticwebassets\AssetMan_WebApp.StaticWebAssets.Manifest.cache
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\staticwebassets\AssetMan_WebApp.StaticWebAssets.xml
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\scopedcss\bundle\AssetMan_WebApp.styles.css
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.RazorTargetAssemblyInfo.cache
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.genruntimeconfig.cache
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\Dapper.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\System.Data.SQLite.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-x64\native\SQLite.Interop.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\osx-x64\native\SQLite.Interop.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-x64\native\SQLite.Interop.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-x86\native\SQLite.Interop.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan.Plugins.Repository.SqliteDb.dll
+D:\My Programming Projects\AssetManagement\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan.Plugins.Repository.SqliteDb.pdb
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\libman.json
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\appsettings.json
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.exe
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.deps.json
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.runtimeconfig.json
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.runtimeconfig.dev.json
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\ref\AssetMan_WebApp.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan_WebApp.pdb
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\AutoMapper.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\Ben.Demystifier.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\ClosedXML.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\Dapper.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Framework.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Framework.Hosting.AspNetCore.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.Core.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.DynamicData.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.Export.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.Export.Csv.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.BusinessPack.Export.Excel.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Core.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Framework.Controls.DynamicData.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Framework.Controls.DynamicData.Annotations.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\DotVVM.Utils.HtmlElements.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\ExcelNumberFormat.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\System.Data.SQLite.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\System.CodeDom.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\System.IO.Packaging.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\cs-cz\DotVVM.BusinessPack.resources.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\linux-x64\native\SQLite.Interop.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\osx-x64\native\SQLite.Interop.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-x64\native\SQLite.Interop.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\runtimes\win-x86\native\SQLite.Interop.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan.CoreBusiness.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan.Plugins.Repository.SqliteDb.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan.UseCases.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan.Plugins.Repository.SqliteDb.pdb
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan.UseCases.pdb
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\bin\Debug\net5.0\AssetMan.CoreBusiness.pdb
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.csproj.AssemblyReference.cache
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.Resources.Texts.resources
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.csproj.GenerateResource.cache
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.AssemblyInfoInputs.cache
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.AssemblyInfo.cs
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.csproj.CoreCompileInputs.cache
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.MvcApplicationPartsAssemblyInfo.cache
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\staticwebassets\AssetMan_WebApp.StaticWebAssets.Manifest.cache
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\staticwebassets\AssetMan_WebApp.StaticWebAssets.xml
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\scopedcss\bundle\AssetMan_WebApp.styles.css
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.RazorTargetAssemblyInfo.cache
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.csproj.CopyComplete
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\ref\AssetMan_WebApp.dll
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.pdb
+D:\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\obj\Debug\net5.0\AssetMan_WebApp.genruntimeconfig.cache

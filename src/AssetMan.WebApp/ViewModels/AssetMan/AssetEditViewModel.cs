@@ -5,7 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.ViewModel;
 
-using AssetMan.UseCases.Interfaces;
+using AssetMan.UseCases.AssetScreen;
+using AssetMan.UseCases.LocationScreen;
+using AssetMan.UseCases.CategoryScreen;
+using AssetMan.UseCases.FinnCategoryScreen;
+using AssetMan.UseCases.ContactScreen;
 using AssetMan.UseCases.DTO;
 using AssetMan.UseCases.enums;
 
@@ -13,26 +17,27 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
 {
     public class AssetEditlViewModel : AssetMan_WebApp.ViewModels.MasterPageViewModel
     {
-        private readonly IAssetUpdateUseCase assetUpdateUseCase;
-        private readonly IAssetGetByIdUseCase assetGetByIdUseCase;
+        private readonly IUpdateAssetUseCase assetUpdateUseCase;
+        private readonly IGetAssetByIdUseCase assetGetByIdUseCase;
 
-        private readonly ICategoryViewAllUseCase categoryViewAllUseCase;
-        private readonly ICategoryGetByIdUseCase categoryGetByIdUseCase;
+        private readonly IGetAllCategoriesUseCase categoryViewAllUseCase;
+        private readonly IGetCategoryByIdUseCase categoryGetByIdUseCase;
 
-        private readonly ILocationViewAllUseCase locationViewAllUseCase;
-        private readonly ILocationGetByIdUseCase locationGetByIdUseCase;
+        private readonly IGetAllLocationsUseCase    locationViewAllUseCase;
+        private readonly IGetLocationByIdUseCase locationGetByIdUseCase;
 
-        private readonly IContactViewAllUseCase contactViewAllUseCase;
-        private readonly IContactGetByIdUseCase contactGetByIdUseCase;
+        private readonly IGetAllContactsUseCase contactViewAllUseCase;
+        private readonly IGetContactByIdUseCase contactGetByIdUseCase;
 
-        private readonly IFinanceCategoryViewAllUseCase financeCategoryViewAllUseCase;
-        private readonly IFinanceCategoryGetByIdUseCase financeCategoryGetByIdUseCase;
+        private readonly IGetAllFinanceCategoriesUseCase financeCategoryViewAllUseCase;
+        private readonly IGetFinanceCategoryByIdUseCase financeCategoryGetByIdUseCase;
 
-        public AssetEditlViewModel (IAssetUpdateUseCase assetUpdateUseCase, ICategoryViewAllUseCase categoryViewAllUseCase, ICategoryGetByIdUseCase categoryGetByIdUseCase,
-            ILocationViewAllUseCase locationViewAllUseCase, ILocationGetByIdUseCase locationGetByIdUseCase,
-            IFinanceCategoryViewAllUseCase financeCategoryViewAllUseCaseBLL, IFinanceCategoryGetByIdUseCase financeCategoryGetByIdUseCase,
-                    IContactViewAllUseCase contactViewAllUseCase, IContactGetByIdUseCase contactGetByIdUseCase,
-                    IAssetGetByIdUseCase assetGetByIdUseCase)
+        public AssetEditlViewModel (IUpdateAssetUseCase assetUpdateUseCase, IGetAllCategoriesUseCase categoryViewAllUseCase,
+            IGetCategoryByIdUseCase categoryGetByIdUseCase,
+            IGetAllLocationsUseCase locationViewAllUseCase, IGetLocationByIdUseCase locationGetByIdUseCase,
+            IGetAllFinanceCategoriesUseCase financeCategoryViewAllUseCaseBLL, IGetFinanceCategoryByIdUseCase financeCategoryGetByIdUseCase,
+                    IGetAllContactsUseCase contactViewAllUseCase, IGetContactByIdUseCase contactGetByIdUseCase,
+                    IGetAssetByIdUseCase assetGetByIdUseCase)
         {
 
             this.assetUpdateUseCase = assetUpdateUseCase;
@@ -57,25 +62,25 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
                 int id = 0;
                 if (int.TryParse(Context.Parameters["Id"].ToString(), out id))
                 {
-                    this.OriginalAsset = assetGetByIdUseCase.Execute(id);
+                    this.OriginalAsset = assetGetByIdUseCase.Execute(id).Result;
                     //Cập nhật qua Asset để hiệu đính:
                     this.Asset = new();
                     UpdateAssetFromOriginal();
                 }
                 //Update một số combo
                 if (!string.IsNullOrEmpty(this.Asset.CategoryFinance_FK))
-                    this.SelectedCategoryInFinance = this.financeCategoryGetByIdUseCase.Execute(this.Asset.CategoryFinance_FK);
+                    this.SelectedCategoryInFinance = this.financeCategoryGetByIdUseCase.Execute(this.Asset.CategoryFinance_FK).Result;
 
                 if (!string.IsNullOrEmpty(this.Asset.Category_FK))
-                    this.SelectedCategory = this.categoryGetByIdUseCase.Execute(this.Asset.Category_FK);
+                    this.SelectedCategory = this.categoryGetByIdUseCase.Execute(this.Asset.Category_FK).Result;
 
                 if (this.Asset.Location_FK >0)
                 {
-                    this.SelectedLocation = this.locationGetByIdUseCase.Execute(this.Asset.Location_FK);
+                    this.SelectedLocation = this.locationGetByIdUseCase.Execute(this.Asset.Location_FK).Result;
                 }
                 if (this.Asset.Owner_FK > 0)
                 {
-                    this.SelectedContact = this.contactGetByIdUseCase.Execute(this.Asset.Owner_FK);
+                    this.SelectedContact = this.contactGetByIdUseCase.Execute(this.Asset.Owner_FK).Result;
                 }
                 
                 if (this.Asset.Condition > 0)
@@ -96,19 +101,19 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
         }
 
         [Bind(Direction.ClientToServer)]
-        public List<CategoryDTO> CategoryList => this.categoryViewAllUseCase.Execute();
+        public List<CategoryDTO> CategoryList => this.categoryViewAllUseCase.Execute().Result;
         public CategoryDTO SelectedCategory { get; set; }
 
         [Bind(Direction.ClientToServer)]
-        public List<LocationDTO> LocationList => this.locationViewAllUseCase.Execute();
+        public List<LocationDTO> LocationList => this.locationViewAllUseCase.Execute().Result;
         public LocationDTO SelectedLocation { get; set; }
 
         [Bind(Direction.ClientToServer)]
-        public List<CategoryInFinanceDTO> CategoryInFinanceList => this.financeCategoryViewAllUseCase.Execute();
+        public List<CategoryInFinanceDTO> CategoryInFinanceList => this.financeCategoryViewAllUseCase.Execute().Result;
         public CategoryInFinanceDTO SelectedCategoryInFinance { get; set; }
 
         [Bind(Direction.ClientToServer)]
-        public List<ContactDTO> ContactList => this.contactViewAllUseCase.Execute();
+        public List<ContactDTO> ContactList => this.contactViewAllUseCase.Execute().Result;
         public ContactDTO SelectedContact { get; set; }
 
 
@@ -238,7 +243,7 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
                 return;
             }
 
-            this.ValidationgMessagesText = this.assetUpdateUseCase.Execute(this.Asset);
+            this.ValidationgMessagesText = this.assetUpdateUseCase.Execute(this.Asset).Result;
 
             Context.RedirectToRoute("AssetDetail", new { Id = this.Asset.ID });
             // Chưa thực hiện

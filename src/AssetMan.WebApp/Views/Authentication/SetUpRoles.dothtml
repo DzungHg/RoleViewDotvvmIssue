@@ -1,0 +1,11 @@
+﻿@viewModel AssetMan_WebApp.ViewModels.Authentication.SetUpRolesViewModel, AssetMan_WebApp
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <div class="container">
+        <bp:Button Text="Cài dặt Roles, Admin" Click="{command: SetUpAuth()}" />
+        <p>Bạn cài đặt tất cả các Roles (vai trò) và tài khoản admin cao nhất tại đây!</p>
+    </div>
+
+</dot:Content>
+

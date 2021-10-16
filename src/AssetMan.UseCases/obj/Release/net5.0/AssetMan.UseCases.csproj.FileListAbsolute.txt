@@ -1,0 +1,15 @@
+F:\My Programming Projects\AssetManagement\src\AssetMan.UseCases\bin\Release\net5.0\AssetMan.UseCases.deps.json
+F:\My Programming Projects\AssetManagement\src\AssetMan.UseCases\bin\Release\net5.0\AssetMan.UseCases.dll
+F:\My Programming Projects\AssetManagement\src\AssetMan.UseCases\bin\Release\net5.0\ref\AssetMan.UseCases.dll
+F:\My Programming Projects\AssetManagement\src\AssetMan.UseCases\bin\Release\net5.0\AssetMan.UseCases.pdb
+F:\My Programming Projects\AssetManagement\src\AssetMan.UseCases\bin\Release\net5.0\AssetMan.CoreBusiness.dll
+F:\My Programming Projects\AssetManagement\src\AssetMan.UseCases\bin\Release\net5.0\AssetMan.CoreBusiness.pdb
+F:\My Programming Projects\AssetManagement\src\AssetMan.UseCases\obj\Release\net5.0\AssetMan.UseCases.csproj.AssemblyReference.cache
+F:\My Programming Projects\AssetManagement\src\AssetMan.UseCases\obj\Release\net5.0\AssetMan.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+F:\My Programming Projects\AssetManagement\src\AssetMan.UseCases\obj\Release\net5.0\AssetMan.UseCases.AssemblyInfoInputs.cache
+F:\My Programming Projects\AssetManagement\src\AssetMan.UseCases\obj\Release\net5.0\AssetMan.UseCases.AssemblyInfo.cs
+F:\My Programming Projects\AssetManagement\src\AssetMan.UseCases\obj\Release\net5.0\AssetMan.UseCases.csproj.CoreCompileInputs.cache
+F:\My Programming Projects\AssetManagement\src\AssetMan.UseCases\obj\Release\net5.0\AssetMan.UseCases.csproj.CopyComplete
+F:\My Programming Projects\AssetManagement\src\AssetMan.UseCases\obj\Release\net5.0\AssetMan.UseCases.dll
+F:\My Programming Projects\AssetManagement\src\AssetMan.UseCases\obj\Release\net5.0\ref\AssetMan.UseCases.dll
+F:\My Programming Projects\AssetManagement\src\AssetMan.UseCases\obj\Release\net5.0\AssetMan.UseCases.pdb

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.ViewModel;
-using AssetMan.UseCases.Interfaces;
+using AssetMan.UseCases.LocationScreen;
 using AssetMan.UseCases.DTO;
 
 
@@ -13,10 +13,10 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
 {
     public class LocationDetailViewModel : AssetMan_WebApp.ViewModels.MasterPageViewModel
     {
-        private readonly ILocationGetByIdUseCase locationGetByIdUseCase;
+        private readonly IGetLocationByIdUseCase locationGetByIdUseCase;
 
 
-        public LocationDetailViewModel(ILocationGetByIdUseCase  locationGetByIdUseCase)
+        public LocationDetailViewModel(IGetLocationByIdUseCase locationGetByIdUseCase)
         {
 
             this.locationGetByIdUseCase = locationGetByIdUseCase;
@@ -30,7 +30,7 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
             int id = 0;
             if (int.TryParse(Context.Parameters["Id"].ToString(), out id))
             {
-                this.Location = locationGetByIdUseCase.Execute(id);
+                this.Location = locationGetByIdUseCase.Execute(id).Result;
             }
 
             //int id = Convert.ToInt32(Context.Parameters["id"]);

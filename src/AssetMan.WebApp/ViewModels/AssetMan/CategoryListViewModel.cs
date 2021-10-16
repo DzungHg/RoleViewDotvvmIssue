@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.ViewModel;
 using DotVVM.BusinessPack.Controls;
-using AssetMan.UseCases.Interfaces;
+using AssetMan.UseCases.CategoryScreen;
 using AssetMan.UseCases.DTO;
 
 
@@ -14,10 +14,10 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
 {
     public class CategoryListViewModel : AssetMan_WebApp.ViewModels.MasterPageViewModel
     {
-        private readonly ICategoryViewAllUseCase categoryViewAllUseCase;
+        private readonly IGetAllCategoriesUseCase categoryViewAllUseCase;
 
         
-        public CategoryListViewModel(ICategoryViewAllUseCase categoryViewAllUseCase)
+        public CategoryListViewModel(IGetAllCategoriesUseCase categoryViewAllUseCase)
         {
             this.categoryViewAllUseCase = categoryViewAllUseCase;
            
@@ -40,7 +40,7 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
             if (Categories.IsRefreshRequired)
             {
                
-                    Categories.Items = categoryViewAllUseCase.Execute();
+                    Categories.Items = categoryViewAllUseCase.Execute().Result;
                
             }
 

@@ -33,10 +33,16 @@
     ".NETCoreApp,Version=v5.0": {
       "AssetMan_WebApp/1.0.0": {
         "dependencies": {
-          "AsseMan.Plugins.Repository.SqliteDb": "1.0.0",
+          "AssetMan.Plugins.Repository.SqliteDb": "1.0.0",
           "AssetMan.UseCases": "1.0.0",
-          "DotVVM.AspNetCore": "3.0.1",
-          "DotVVM.BusinessPack": "3.0.0-preview03-final",
+          "DotVVM": "3.2.1",
+          "DotVVM.AspNetCore": "3.2.1",
+          "DotVVM.BusinessPack": "3.2.0-preview01-final",
+          "DotVVM.BusinessPack.DynamicData": "3.2.0-preview01-final",
+          "DotVVM.BusinessPack.Export": "3.2.0-preview01-final",
+          "DotVVM.BusinessPack.Export.Csv": "3.2.0-preview01-final",
+          "DotVVM.BusinessPack.Export.Excel": "3.2.0-preview01-final",
+          "DotVVM.Utils.HtmlElements": "3.2.0-preview01-final",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.7",
           "Microsoft.Web.LibraryManager.Build": "2.1.113",
@@ -359,6 +365,23 @@
           "lib/netstandard2.0/Ben.Demystifier.dll": {}
         }
       },
+      "ClosedXML.Signed/0.95.4": {
+        "dependencies": {
+          "DocumentFormat.OpenXml": "2.7.2",
+          "ExcelNumberFormat": "1.0.10",
+          "Microsoft.CSharp": "4.7.0",
+          "System.Drawing.Common": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ClosedXML.dll": {
+            "assemblyVersion": "0.95.4.0",
+            "fileVersion": "0.95.4.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/ClosedXML.dll": {}
+        }
+      },
       "Dapper/2.0.90": {
         "runtime": {
           "lib/net5.0/Dapper.dll": {
@@ -370,9 +393,24 @@
           "lib/net5.0/Dapper.dll": {}
         }
       },
-      "DotVVM/3.0.1": {
+      "DocumentFormat.OpenXml/2.7.2": {
         "dependencies": {
-          "DotVVM.Core": "3.0.1",
+          "NETStandard.Library": "1.6.1",
+          "System.IO.Packaging": "4.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/DocumentFormat.OpenXml.dll": {
+            "assemblyVersion": "2.7.2.0",
+            "fileVersion": "2.7.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/DocumentFormat.OpenXml.dll": {}
+        }
+      },
+      "DotVVM/3.2.1": {
+        "dependencies": {
+          "DotVVM.Core": "3.2.1",
           "Microsoft.CodeAnalysis.CSharp": "2.6.1",
           "Microsoft.Extensions.DependencyInjection": "5.0.1",
           "Microsoft.Extensions.DependencyModel": "5.0.0",
@@ -392,19 +430,19 @@
         },
         "runtime": {
           "lib/netstandard2.1/DotVVM.Framework.dll": {
-            "assemblyVersion": "3.0.1.0",
-            "fileVersion": "3.0.1.0"
+            "assemblyVersion": "3.2.1.0",
+            "fileVersion": "3.2.1.0"
           }
         },
         "compile": {
           "lib/netstandard2.1/DotVVM.Framework.dll": {}
         }
       },
-      "DotVVM.AspNetCore/3.0.1": {
+      "DotVVM.AspNetCore/3.2.1": {
         "dependencies": {
           "Ben.Demystifier": "0.1.0",
-          "DotVVM": "3.0.1",
-          "DotVVM.Core": "3.0.1",
+          "DotVVM": "3.2.1",
+          "DotVVM.Core": "3.2.1",
           "Microsoft.AspNetCore.Authentication.Cookies": "2.1.0",
           "Microsoft.AspNetCore.Authorization": "2.1.0",
           "Microsoft.AspNetCore.DataProtection": "2.1.0",
@@ -416,23 +454,23 @@
         },
         "runtime": {
           "lib/netstandard2.0/DotVVM.Framework.Hosting.AspNetCore.dll": {
-            "assemblyVersion": "3.0.1.0",
-            "fileVersion": "3.0.1.0"
+            "assemblyVersion": "3.2.1.0",
+            "fileVersion": "3.2.1.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/DotVVM.Framework.Hosting.AspNetCore.dll": {}
         }
       },
-      "DotVVM.BusinessPack/3.0.0-preview03-final": {
+      "DotVVM.BusinessPack/3.2.0-preview01-final": {
         "dependencies": {
-          "DotVVM.BusinessPack.Core": "3.0.0-preview03-final",
-          "DotVVM.Utils.HtmlElements": "3.0.0-preview03-final"
+          "DotVVM.BusinessPack.Core": "3.2.0-preview01-final",
+          "DotVVM.Utils.HtmlElements": "3.2.0-preview01-final"
         },
         "runtime": {
           "lib/netstandard2.0/DotVVM.BusinessPack.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
           }
         },
         "resources": {
@@ -444,22 +482,81 @@
           "lib/netstandard2.0/DotVVM.BusinessPack.dll": {}
         }
       },
-      "DotVVM.BusinessPack.Core/3.0.0-preview03-final": {
+      "DotVVM.BusinessPack.Core/3.2.0-preview01-final": {
         "dependencies": {
-          "DotVVM": "3.0.1",
+          "DotVVM": "3.2.1",
           "System.Drawing.Common": "4.5.0"
         },
         "runtime": {
           "lib/netstandard2.0/DotVVM.BusinessPack.Core.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/DotVVM.BusinessPack.Core.dll": {}
         }
       },
-      "DotVVM.Core/3.0.1": {
+      "DotVVM.BusinessPack.DynamicData/3.2.0-preview01-final": {
+        "dependencies": {
+          "DotVVM.BusinessPack": "3.2.0-preview01-final",
+          "DotVVM.DynamicData": "3.0.0",
+          "DotVVM.DynamicData.Annotations": "3.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/DotVVM.BusinessPack.DynamicData.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/DotVVM.BusinessPack.DynamicData.dll": {}
+        }
+      },
+      "DotVVM.BusinessPack.Export/3.2.0-preview01-final": {
+        "dependencies": {
+          "DotVVM.BusinessPack": "3.2.0-preview01-final"
+        },
+        "runtime": {
+          "lib/netstandard2.0/DotVVM.BusinessPack.Export.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/DotVVM.BusinessPack.Export.dll": {}
+        }
+      },
+      "DotVVM.BusinessPack.Export.Csv/3.2.0-preview01-final": {
+        "dependencies": {
+          "DotVVM.BusinessPack.Export": "3.2.0-preview01-final"
+        },
+        "runtime": {
+          "lib/netstandard2.0/DotVVM.BusinessPack.Export.Csv.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/DotVVM.BusinessPack.Export.Csv.dll": {}
+        }
+      },
+      "DotVVM.BusinessPack.Export.Excel/3.2.0-preview01-final": {
+        "dependencies": {
+          "ClosedXML.Signed": "0.95.4",
+          "DotVVM.BusinessPack.Export": "3.2.0-preview01-final"
+        },
+        "runtime": {
+          "lib/netstandard2.0/DotVVM.BusinessPack.Export.Excel.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/DotVVM.BusinessPack.Export.Excel.dll": {}
+        }
+      },
+      "DotVVM.Core/3.2.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.3",
@@ -468,26 +565,63 @@
         },
         "runtime": {
           "lib/netstandard1.6/DotVVM.Core.dll": {
-            "assemblyVersion": "3.0.1.0",
-            "fileVersion": "3.0.1.0"
+            "assemblyVersion": "3.2.1.0",
+            "fileVersion": "3.2.1.0"
           }
         },
         "compile": {
           "lib/netstandard1.6/DotVVM.Core.dll": {}
         }
       },
-      "DotVVM.Utils.HtmlElements/3.0.0-preview03-final": {
+      "DotVVM.DynamicData/3.0.0": {
         "dependencies": {
-          "DotVVM": "3.0.1"
+          "DotVVM": "3.2.1",
+          "DotVVM.DynamicData.Annotations": "3.0.0"
         },
         "runtime": {
-          "lib/netstandard2.0/DotVVM.Utils.HtmlElements.dll": {
+          "lib/netcoreapp2.0/DotVVM.Framework.Controls.DynamicData.dll": {
             "assemblyVersion": "3.0.0.0",
             "fileVersion": "3.0.0.0"
           }
         },
         "compile": {
+          "lib/netcoreapp2.0/DotVVM.Framework.Controls.DynamicData.dll": {}
+        }
+      },
+      "DotVVM.DynamicData.Annotations/3.0.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/DotVVM.Framework.Controls.DynamicData.Annotations.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.0/DotVVM.Framework.Controls.DynamicData.Annotations.dll": {}
+        }
+      },
+      "DotVVM.Utils.HtmlElements/3.2.0-preview01-final": {
+        "dependencies": {
+          "DotVVM": "3.2.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/DotVVM.Utils.HtmlElements.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        },
+        "compile": {
           "lib/netstandard2.0/DotVVM.Utils.HtmlElements.dll": {}
+        }
+      },
+      "ExcelNumberFormat/1.0.10": {
+        "runtime": {
+          "lib/netstandard2.0/ExcelNumberFormat.dll": {
+            "assemblyVersion": "1.0.10.0",
+            "fileVersion": "1.0.10.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/ExcelNumberFormat.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication/2.1.0": {
@@ -1195,11 +1329,11 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
-      "Stub.System.Data.SQLite.Core.NetStandard/1.0.114.3": {
+      "Stub.System.Data.SQLite.Core.NetStandard/1.0.115": {
         "runtime": {
           "lib/netstandard2.1/System.Data.SQLite.dll": {
-            "assemblyVersion": "1.0.114.0",
-            "fileVersion": "1.0.114.0"
+            "assemblyVersion": "1.0.115.0",
+            "fileVersion": "1.0.115.0"
           }
         },
         "runtimeTargets": {
@@ -1216,12 +1350,12 @@
           "runtimes/win-x64/native/SQLite.Interop.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "1.0.114.0"
+            "fileVersion": "1.0.115.0"
           },
           "runtimes/win-x86/native/SQLite.Interop.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "1.0.114.0"
+            "fileVersion": "1.0.115.0"
           }
         },
         "compile": {
@@ -1329,9 +1463,9 @@
           "System.Text.Encoding": "4.3.0"
         }
       },
-      "System.Data.SQLite.Core/1.0.114.3": {
+      "System.Data.SQLite.Core/1.0.115": {
         "dependencies": {
-          "Stub.System.Data.SQLite.Core.NetStandard": "1.0.114.3"
+          "Stub.System.Data.SQLite.Core.NetStandard": "1.0.115"
         }
       },
       "System.Diagnostics.Contracts/4.3.0": {
@@ -1525,6 +1659,31 @@
       "System.IO.FileSystem.Primitives/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.IO.Packaging/4.0.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.IO.Compression": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.IO.Packaging.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
+        },
+        "compile": {
+          "ref/netstandard1.3/System.IO.Packaging.dll": {}
         }
       },
       "System.Linq/4.3.0": {
@@ -2069,26 +2228,26 @@
           "System.Xml.XPath": "4.3.0"
         }
       },
-      "AsseMan.Plugins.Repository.SqliteDb/1.0.0": {
-        "dependencies": {
-          "AssetMan.CoreBusiness": "1.0.0",
-          "AssetMan.UseCases": "1.0.0",
-          "Dapper": "2.0.90",
-          "System.Data.SQLite.Core": "1.0.114.3"
-        },
-        "runtime": {
-          "AsseMan.Plugins.Repository.SqliteDb.dll": {}
-        },
-        "compile": {
-          "AsseMan.Plugins.Repository.SqliteDb.dll": {}
-        }
-      },
       "AssetMan.CoreBusiness/1.0.0": {
         "runtime": {
           "AssetMan.CoreBusiness.dll": {}
         },
         "compile": {
           "AssetMan.CoreBusiness.dll": {}
+        }
+      },
+      "AssetMan.Plugins.Repository.SqliteDb/1.0.0": {
+        "dependencies": {
+          "AssetMan.CoreBusiness": "1.0.0",
+          "AssetMan.UseCases": "1.0.0",
+          "Dapper": "2.0.90",
+          "System.Data.SQLite.Core": "1.0.115"
+        },
+        "runtime": {
+          "AssetMan.Plugins.Repository.SqliteDb.dll": {}
+        },
+        "compile": {
+          "AssetMan.Plugins.Repository.SqliteDb.dll": {}
         }
       },
       "AssetMan.UseCases/1.0.0": {
@@ -3812,6 +3971,13 @@
       "path": "ben.demystifier/0.1.0",
       "hashPath": "ben.demystifier.0.1.0.nupkg.sha512"
     },
+    "ClosedXML.Signed/0.95.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uGGdB9M3NWowJZWLJmg2hFssIyrGdpqNcQ0KukhtotYB9lJ9uoz8QtGfmTyMOrrURJbXmxsUz1BDXih29IMN+A==",
+      "path": "closedxml.signed/0.95.4",
+      "hashPath": "closedxml.signed.0.95.4.nupkg.sha512"
+    },
     "Dapper/2.0.90": {
       "type": "package",
       "serviceable": true,
@@ -3819,47 +3985,103 @@
       "path": "dapper/2.0.90",
       "hashPath": "dapper.2.0.90.nupkg.sha512"
     },
-    "DotVVM/3.0.1": {
+    "DocumentFormat.OpenXml/2.7.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GlpAcRBBT30dqdLBhtNhqxda0CZeM2B3BNKY5oQ7aGwBTGmXAeRi/m+wLFPwwqB/ExIf8BPzEvMFUrYPzJUeSw==",
-      "path": "dotvvm/3.0.1",
-      "hashPath": "dotvvm.3.0.1.nupkg.sha512"
+      "sha512": "sha512-tWT7iu0ab9PNoMTWjv24rt+qnyqvcnPOYs167vPnk4aegAYSAxoUjwNW+VxY8xoLtJntQ/JlWTi7Vt+8TghLlQ==",
+      "path": "documentformat.openxml/2.7.2",
+      "hashPath": "documentformat.openxml.2.7.2.nupkg.sha512"
     },
-    "DotVVM.AspNetCore/3.0.1": {
+    "DotVVM/3.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Dc5VjVPN04Aaor0v8sM1YrRWv2tDpVifpIZygiFnhBhroi4ChI3BbMUa0wiWqM2/dNZyk2IyfCgv5A5IRZYR6A==",
-      "path": "dotvvm.aspnetcore/3.0.1",
-      "hashPath": "dotvvm.aspnetcore.3.0.1.nupkg.sha512"
+      "sha512": "sha512-aefUErzUrDJ15XTrmIDyQj12On5ZXiRpckxRC53++5xLbFfXN4Gtwk1DqTaly1EeQgtk18cIIHu2hoGixVHYdw==",
+      "path": "dotvvm/3.2.1",
+      "hashPath": "dotvvm.3.2.1.nupkg.sha512"
     },
-    "DotVVM.BusinessPack/3.0.0-preview03-final": {
+    "DotVVM.AspNetCore/3.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-em06VXms5xDczXkVZI6WMGXWvRGDMjxY6lPyguP+nO5sqv9DNj0HenNgCluLPhhSi3y0Q1wsmisaepKG9Cq5aA==",
-      "path": "dotvvm.businesspack/3.0.0-preview03-final",
-      "hashPath": "dotvvm.businesspack.3.0.0-preview03-final.nupkg.sha512"
+      "sha512": "sha512-3GuUcK00ZXKtcGQPlbfmDXGE2D0TLCe/bT1J2DYJa9pyK+GyyZB/Pw5pqcjbtLMAOQ8MEBS0E5X2uNZY4B+c/w==",
+      "path": "dotvvm.aspnetcore/3.2.1",
+      "hashPath": "dotvvm.aspnetcore.3.2.1.nupkg.sha512"
     },
-    "DotVVM.BusinessPack.Core/3.0.0-preview03-final": {
+    "DotVVM.BusinessPack/3.2.0-preview01-final": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gpEjjbff23TTj9jXzrOzBlKUmOVEgI5lJGzjjvZ2gLt36UE+kZwzDGvBdvSfh4TulRcBpPYPSqlVFN9YFZnFDA==",
-      "path": "dotvvm.businesspack.core/3.0.0-preview03-final",
-      "hashPath": "dotvvm.businesspack.core.3.0.0-preview03-final.nupkg.sha512"
+      "sha512": "sha512-W1xnNrdpDJCAc2+YaRtRROBtbm6Ugk1Qzh2d8JYRa/rbhTu+m86jhEY5fKzdkAeaSguh3zJYsrfX5RHIOovBIg==",
+      "path": "dotvvm.businesspack/3.2.0-preview01-final",
+      "hashPath": "dotvvm.businesspack.3.2.0-preview01-final.nupkg.sha512"
     },
-    "DotVVM.Core/3.0.1": {
+    "DotVVM.BusinessPack.Core/3.2.0-preview01-final": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-l3prBsOJDP9soN29eNeJI6UySt9lb034hjIDjp0Z8XWxBHsZoBz/MVxEgjsE5x9RhQxGqaUF/Z97iAwm9HbUZw==",
-      "path": "dotvvm.core/3.0.1",
-      "hashPath": "dotvvm.core.3.0.1.nupkg.sha512"
+      "sha512": "sha512-NtwHOIkFLYcmtGetd1dQsdZYDGWr5S3VR0SZJr7GSi/KE9llp7zle15BtkLGSYBPJ8kGMEPYSbmInqmZ1JjcHg==",
+      "path": "dotvvm.businesspack.core/3.2.0-preview01-final",
+      "hashPath": "dotvvm.businesspack.core.3.2.0-preview01-final.nupkg.sha512"
     },
-    "DotVVM.Utils.HtmlElements/3.0.0-preview03-final": {
+    "DotVVM.BusinessPack.DynamicData/3.2.0-preview01-final": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-I3KyEtdArJKTv01JwPZODIaBAnbBbVun04hS9jQnKynHU1qcbr89i0lYdoREJXFwd62lSJ8GBqbRVVpEu6DZHA==",
-      "path": "dotvvm.utils.htmlelements/3.0.0-preview03-final",
-      "hashPath": "dotvvm.utils.htmlelements.3.0.0-preview03-final.nupkg.sha512"
+      "sha512": "sha512-RuEq/RZJnR5ZkAZxKPcD4OuC0nf0vRRYh+HzwArO+lGvLId5HTrPL4uOE8p3mmlLgtIY5Fqk22bOYOOLmzh3iQ==",
+      "path": "dotvvm.businesspack.dynamicdata/3.2.0-preview01-final",
+      "hashPath": "dotvvm.businesspack.dynamicdata.3.2.0-preview01-final.nupkg.sha512"
+    },
+    "DotVVM.BusinessPack.Export/3.2.0-preview01-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dX/j2VwKDZP32ISvy+DT/HqHy1wLKuLTsAL1mbp2REmBuW87sCG+8gT1b3A6oaJyOUSqhQ5d4OcWRia5TcjDZw==",
+      "path": "dotvvm.businesspack.export/3.2.0-preview01-final",
+      "hashPath": "dotvvm.businesspack.export.3.2.0-preview01-final.nupkg.sha512"
+    },
+    "DotVVM.BusinessPack.Export.Csv/3.2.0-preview01-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/2gpOG467n+N/4+2yT1Ic3OWVv/ZIkBJkCsT7CKP9aAoTbRo/qT94bHBOONFIw4NIF5cpNt3lq40XIulRBCWpA==",
+      "path": "dotvvm.businesspack.export.csv/3.2.0-preview01-final",
+      "hashPath": "dotvvm.businesspack.export.csv.3.2.0-preview01-final.nupkg.sha512"
+    },
+    "DotVVM.BusinessPack.Export.Excel/3.2.0-preview01-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SBYUSkrVFr1y7XaCtutcZ+CPAAlLloU4j0tySc4Jxby9YetzHFAmzraUp665+l7NDxIch6r514Jvp3XKOjY07Q==",
+      "path": "dotvvm.businesspack.export.excel/3.2.0-preview01-final",
+      "hashPath": "dotvvm.businesspack.export.excel.3.2.0-preview01-final.nupkg.sha512"
+    },
+    "DotVVM.Core/3.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VgBKq4tXrbHb86e0Ooz3Cl6S6MJKhbzfeIFpzBILgvnErilksP7yqL235bGWqASm4OhVLFNlfPL7sS0O0VFIFA==",
+      "path": "dotvvm.core/3.2.1",
+      "hashPath": "dotvvm.core.3.2.1.nupkg.sha512"
+    },
+    "DotVVM.DynamicData/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gjCWxS21+ExUkKS3nlQ7/qcvlT/HX5GcPyp2omQvd233uDC7rbEFgJJ2W71LB445iPNC9g8x5BSY0MZeLUpefw==",
+      "path": "dotvvm.dynamicdata/3.0.0",
+      "hashPath": "dotvvm.dynamicdata.3.0.0.nupkg.sha512"
+    },
+    "DotVVM.DynamicData.Annotations/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5xjcR+p3P/nWDURrLfQs2llM5Ca3e1oADo/QXA/AoNnU/FuR2Bsce7XQdUoZuXuddsePq+iQk/j2a8YrQolbjQ==",
+      "path": "dotvvm.dynamicdata.annotations/3.0.0",
+      "hashPath": "dotvvm.dynamicdata.annotations.3.0.0.nupkg.sha512"
+    },
+    "DotVVM.Utils.HtmlElements/3.2.0-preview01-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BVvQAPRPW3UHOCGk8CJ+rrYwrPkFyFiHbpz9v6Qz+4uoeuS3AlYCsq7V9aakuQhdQ2Ha479wvelCI9X5nSf/dg==",
+      "path": "dotvvm.utils.htmlelements/3.2.0-preview01-final",
+      "hashPath": "dotvvm.utils.htmlelements.3.2.0-preview01-final.nupkg.sha512"
+    },
+    "ExcelNumberFormat/1.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dRx817M5t0sv4GCJyAXU8qmhFXcqRpCHzLpxNmkMWTvzlfE0/KM7BNk6qEble0ffAr4xT7RyU7s/HpovVlA/9g==",
+      "path": "excelnumberformat/1.0.10",
+      "hashPath": "excelnumberformat.1.0.10.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication/2.1.0": {
       "type": "package",
@@ -4442,12 +4664,12 @@
       "path": "sqlitepclraw.provider.dynamic_cdecl/2.0.4",
       "hashPath": "sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512"
     },
-    "Stub.System.Data.SQLite.Core.NetStandard/1.0.114.3": {
+    "Stub.System.Data.SQLite.Core.NetStandard/1.0.115": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qXqeVhPtbl/i3t+YUPwbaAGCU+ci8TODUc5zQt6YCjlu5TVnCFiZAmLut3G0/YjO0+FEm9y0l90X+8cem7h84g==",
-      "path": "stub.system.data.sqlite.core.netstandard/1.0.114.3",
-      "hashPath": "stub.system.data.sqlite.core.netstandard.1.0.114.3.nupkg.sha512"
+      "sha512": "sha512-afpVRUKjuLZ17W2iv779YORpWQN40rJ82g/ASC6Yq1J4emO+8hL316AISf5nJWfXecygLdqevzXxQZR7z2yRww==",
+      "path": "stub.system.data.sqlite.core.netstandard/1.0.115",
+      "hashPath": "stub.system.data.sqlite.core.netstandard.1.0.115.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",
@@ -4540,12 +4762,12 @@
       "path": "system.console/4.3.0",
       "hashPath": "system.console.4.3.0.nupkg.sha512"
     },
-    "System.Data.SQLite.Core/1.0.114.3": {
+    "System.Data.SQLite.Core/1.0.115": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-60qfErVKfVoqM1kWUX98QUBUBnivvtCezWB4Yk66AhdXCbPFxnRCq0eLc4LMrOPWOYl69X1xlmnEQ+FowqmDvg==",
-      "path": "system.data.sqlite.core/1.0.114.3",
-      "hashPath": "system.data.sqlite.core.1.0.114.3.nupkg.sha512"
+      "sha512": "sha512-OuzSKnAnXtbsB7MUddjLiLAUEuEu8kJco3jWllZs+zgYmuiK5VHUHafD74C65HwnnmWVHUvFBrJ0NDAKINuGNQ==",
+      "path": "system.data.sqlite.core/1.0.115",
+      "hashPath": "system.data.sqlite.core.1.0.115.nupkg.sha512"
     },
     "System.Diagnostics.Contracts/4.3.0": {
       "type": "package",
@@ -4672,6 +4894,13 @@
       "sha512": "sha512-6QOb2XFLch7bEc4lIcJH49nJN2HV+OC3fHDgsLVsBVBk3Y4hFAnOBGzJ2lUu7CyDDFo9IBWkSsnbkT6IBwwiMw==",
       "path": "system.io.filesystem.primitives/4.3.0",
       "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.IO.Packaging/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-taPqPWcAj/h6e/c+zIWIVe1ddJtpV6acC6g9GpolxUcIwUaH6zc0ZbFS8kkVzBkuWv76pMalKeTzfmHtfT1pXA==",
+      "path": "system.io.packaging/4.0.0",
+      "hashPath": "system.io.packaging.4.0.0.nupkg.sha512"
     },
     "System.Linq/4.3.0": {
       "type": "package",
@@ -5079,12 +5308,12 @@
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
-    "AsseMan.Plugins.Repository.SqliteDb/1.0.0": {
+    "AssetMan.CoreBusiness/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "AssetMan.CoreBusiness/1.0.0": {
+    "AssetMan.Plugins.Repository.SqliteDb/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

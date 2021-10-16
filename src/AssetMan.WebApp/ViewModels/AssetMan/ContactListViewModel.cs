@@ -5,17 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.ViewModel;
 using DotVVM.BusinessPack.Controls;
-using AssetMan.UseCases.Interfaces;
+using AssetMan.UseCases.ContactScreen;
 using AssetMan.UseCases.DTO;
 
 namespace AssetMan_WebApp.ViewModels.AssetMan
 {
     public class ContactListViewModel : AssetMan_WebApp.ViewModels.MasterPageViewModel
     {
-        private readonly IContactViewAllUseCase contactViewAllUseCase;
+        private readonly IGetAllContactsUseCase contactViewAllUseCase;
 
         
-        public ContactListViewModel(IContactViewAllUseCase contactViewAllUseCase)
+        public ContactListViewModel(IGetAllContactsUseCase contactViewAllUseCase)
         {
             this.contactViewAllUseCase = contactViewAllUseCase;
            
@@ -38,7 +38,7 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
             if (Contacts.IsRefreshRequired)
             {
                
-                    Contacts.Items = contactViewAllUseCase.Execute();
+                    Contacts.Items = contactViewAllUseCase.Execute().Result;
                
             }
 

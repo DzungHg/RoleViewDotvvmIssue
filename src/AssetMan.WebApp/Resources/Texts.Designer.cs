@@ -88,7 +88,7 @@ namespace AssetMan_WebApp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Đăng ký.
+        ///   Looks up a localized string similar to Register.
         /// </summary>
         public static string Label_Register {
             get {
@@ -97,7 +97,7 @@ namespace AssetMan_WebApp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Đăng nhập.
+        ///   Looks up a localized string similar to Log in.
         /// </summary>
         public static string Label_SignIn {
             get {

@@ -12,14 +12,22 @@ using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Identity;
 using DotVVM.Framework.Hosting;
 using DotVVM.Framework.Routing;
+
 using AssetMan_WebApp.Services;
 using AssetMan_WebApp.DAL;
-
+//
 using AssetMan.UseCases.RepositoryPlugins;
+using AssetMan.Plugins.Repository.SqliteDb;
+using AssetMan.UseCases.AssetScreen;
+using AssetMan.UseCases.CategoryScreen;
+using AssetMan.UseCases.FinnCategoryScreen;
+using AssetMan.UseCases.ContactScreen;
+using AssetMan.UseCases.LocationScreen;
 
-using AssetMan.UseCases.Interfaces;
-using AssetMan.UseCases;
-using AsseMan.Plugins.Repository.SqliteDb;
+
+
+
+
 
 namespace AssetMan.WebApp
 {
@@ -50,6 +58,7 @@ namespace AssetMan.WebApp
                 {
                     options.UseSqlite(Configuration.GetConnectionString("Authentication"));
                 });
+            //
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<StudentDbContext>()
                 .AddDefaultTokenProviders();
@@ -67,9 +76,7 @@ namespace AssetMan.WebApp
 
 
             services.AddDotVVM<DotvvmStartup>();
-        
 
-            //Clean Architech:
             //    Database
             services.AddSingleton<ICategoryRepository, CategoryRepository>();
             services.AddSingleton<IFinanceCategoryRepository, FinanceCategoryRepository>();
@@ -77,40 +84,42 @@ namespace AssetMan.WebApp
             services.AddSingleton<IContactRepository, ContactRepository>();
             services.AddSingleton<IAssetRepository, AssetRepository>();
 
-            services.AddTransient<ICategoryViewAllUseCase, CategoryViewAllUseCase>();
-            services.AddTransient<ICategoryGetByIdUseCase, CategoryGetByIdUseCase>();
-            services.AddTransient<ICategoryCreateUseCase, CategoryCreateUseCase>();
-            services.AddTransient<ICategoryUpdateUseCase, CategoryUpdateUseCase>();
-            services.AddTransient<ICategoryIsIdAvailableUseCase, CategoryIsIdAvailableUseCase>();
+            services.AddTransient<IGetAllCategoriesUseCase, GetAllCategoriesUseCase>();
+            services.AddTransient<IGetCategoryByIdUseCase, GetCategoryByIdUseCase>();
+            services.AddTransient<ICreateCategoryUseCase, CreateCategoryUseCase>();
+            services.AddTransient<IUpdateCategoryUseCase, UpdateCategoryUseCase>();
+            services.AddTransient<IIsCategoryIdAvailableUseCase, IsCategoryIdAvailableUseCase>();
             //CA: FCategory
-            
-            services.AddTransient<IFinanceCategoryViewAllUseCase, FinanceCategoryViewAllUseCase>();
-            services.AddTransient<IFinanceCategoryGetByIdUseCase, FinanceCategoryGetByIdUseCase>();
-            services.AddTransient<IFinanceCategoryCreateUseCase, FinanceCategoryCreateUseCase>();
-            services.AddTransient<IFinanceCategoryUpdateUseCase, FinanceCategoryUpdateUseCase>();
+
+            services.AddTransient<IGetAllFinanceCategoriesUseCase, GetAllFinanceCategoriesUseCase>();
+            services.AddTransient<IGetFinanceCategoryByIdUseCase, GetFinanceCategoryByIdUseCase>();
+            services.AddTransient<ICreateFinanceCategoryUseCase, CreateFinanceCategoryUseCase>();
+            services.AddTransient<IUpdateFinanceCategoryUseCase, UpdateFinanceCategoryUseCase>();
             //CA: Location
-           
-            services.AddTransient<ILocationViewAllUseCase, LocationViewAllUseCase>();
-            services.AddTransient<ILocationGetByIdUseCase, LocationGetByIdUseCase>();
-            services.AddTransient<ILocationCreateUseCase, LocationCreateUseCase>();
-            services.AddTransient<ILocationUpdateUseCase, LocationUpdateUseCase>();
+
+            services.AddTransient<IGetAllLocationsUseCase, GetAllLocationsUseCase>();
+            services.AddTransient<IGetLocationByIdUseCase, GetLocationByIdUseCase>();
+            services.AddTransient<ICreateLocationUseCase, CreateLocationUseCase>();
+            services.AddTransient<IUpdateLocationUseCase, UpdateLocationUseCase>();
             //CA: Contact
-           
-            services.AddTransient<IContactViewAllUseCase, ContactViewAllUseCase>();
-            services.AddTransient<IContactGetByIdUseCase, ContactGetByIdUseCase>();
-            services.AddTransient<IContactCreateUseCase, ContactCreateUseCase>();
-            services.AddTransient<IContactUpdateUseCase, ContactUpdateUseCase>();
+
+            services.AddTransient<IGetAllContactsUseCase, GetAllContactsUseCase>();
+            services.AddTransient<IGetContactByIdUseCase, GetContactByIdUseCase>();
+            services.AddTransient<ICreateContactUseCase, CreateContactUseCase>();
+            services.AddTransient<IUpdateContactUseCase, UpdateContactUseCase>();
             //CA: Asset
-           
-            services.AddTransient<IAssetViewAllUseCase, AssetViewAllUseCase>();
-            services.AddTransient<IAssetsByCategoryUseCase, AssetsByCategoryUseCase>();
-            services.AddTransient<IAssetGetByIdUseCase, AssetGetByIdUseCase>();
-            services.AddTransient<IAssetCreateUseCase, AssetCreateUseCase>();
-            services.AddTransient<IAssetUpdateUseCase, AssetUpdateUseCase>();
+            services.AddTransient<IGetAllAssetViewsUseCase, GetAllAssetViewsUseCase>();
+            services.AddTransient<IGetAssetsByCategoryUseCase, GetAssetsByCategoryUseCase>();
+            services.AddTransient<IGetAssetByIdUseCase, GetAssetByIdUseCase>();
+            services.AddTransient<ICreateAssetUseCase, CreateAssetUseCase>();
+            services.AddTransient<IUpdateAssetUseCase, UpdateAssetUseCase>();          
+                      
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env
+            )
         {
 
 			app.UseAuthentication();
@@ -123,6 +132,9 @@ namespace AssetMan.WebApp
             {
                 FileProvider = new PhysicalFileProvider(env.WebRootPath)
             });
+
+            
         }
+        
     }
 }

@@ -4,7 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.ViewModel;
-using AssetMan.UseCases.Interfaces;
+using AssetMan.UseCases.LocationScreen;
+using AssetMan.UseCases.CategoryScreen;
+using AssetMan.UseCases.FinnCategoryScreen;
+using AssetMan.UseCases.ContactScreen;
+using AssetMan.UseCases.AssetScreen;
+
 using AssetMan.UseCases.DTO;
 using AssetMan.UseCases.enums;
 
@@ -13,15 +18,15 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
 {
     public class AssetCreateViewModel : AssetMan_WebApp.ViewModels.MasterPageViewModel
     {
-        private readonly IAssetCreateUseCase assetCreateUseCase;
-        private readonly ICategoryViewAllUseCase categoryViewAllUseCase;
-        private readonly ILocationViewAllUseCase locationViewAllUseCase;
-        private readonly IContactViewAllUseCase contactViewAllUseCase;
-        private readonly IFinanceCategoryViewAllUseCase financeCategoryViewAllUseCase;
+        private readonly ICreateAssetUseCase assetCreateUseCase;
+        private readonly IGetAllCategoriesUseCase categoryViewAllUseCase;
+        private readonly IGetAllLocationsUseCase locationViewAllUseCase;
+        private readonly IGetAllContactsUseCase contactViewAllUseCase;
+        private readonly IGetAllFinanceCategoriesUseCase financeCategoryViewAllUseCase;
 
-        public AssetCreateViewModel(IAssetCreateUseCase assetCreateUseCase, ICategoryViewAllUseCase categoryViewAllUseCase,
-                    ILocationViewAllUseCase locationViewAllUseCase, IContactViewAllUseCase contactViewAllUseCase,
-                    IFinanceCategoryViewAllUseCase financeCategoryViewAllUseCaseBLL)
+        public AssetCreateViewModel(ICreateAssetUseCase assetCreateUseCase, IGetAllCategoriesUseCase categoryViewAllUseCase,
+                    IGetAllLocationsUseCase locationViewAllUseCase, IGetAllContactsUseCase contactViewAllUseCase,
+                    GetAllFinanceCategoriesUseCase financeCategoryViewAllUseCaseBLL)
         {
 
             this.assetCreateUseCase = assetCreateUseCase;
@@ -33,19 +38,19 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
         }
 
         [Bind(Direction.ClientToServer)]
-        public List<CategoryDTO> CategoryList => this.categoryViewAllUseCase.Execute();
+        public List<CategoryDTO> CategoryList => this.categoryViewAllUseCase.Execute().Result;
         public CategoryDTO SelectedCategory { get; set; }
 
         [Bind(Direction.ClientToServer)]
-        public List<LocationDTO> LocationList => this.locationViewAllUseCase.Execute();
+        public List<LocationDTO> LocationList => this.locationViewAllUseCase.Execute().Result;
         public LocationDTO SelectedLocation { get; set; }
 
         [Bind(Direction.ClientToServer)]
-        public List<CategoryInFinanceDTO> CategoryInFinanceList => this.financeCategoryViewAllUseCase.Execute();
+        public List<CategoryInFinanceDTO> CategoryInFinanceList => this.financeCategoryViewAllUseCase.Execute().Result;
         public CategoryInFinanceDTO SelectedCategoryInFinance { get; set; }
 
         [Bind(Direction.ClientToServer)]
-        public List<ContactDTO> ContactList => this.contactViewAllUseCase.Execute();
+        public List<ContactDTO> ContactList => this.contactViewAllUseCase.Execute().Result;
         public ContactDTO SelectedContact { get; set; }
 
 
@@ -140,7 +145,7 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
                 return;
             }
 
-            this.ValidationgMessagesText = this.assetCreateUseCase.Execute(this.Asset);
+            this.ValidationgMessagesText = this.assetCreateUseCase.Execute(this.Asset).Result;
 
             Context.RedirectToRoute("AssetList");
             // Chưa thực hiện

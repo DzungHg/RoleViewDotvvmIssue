@@ -5,30 +5,92 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Quản lý tài sản doanh nghiệp</title>
-	<dot:RequiredResource Name="bootstrap" />
-	<dot:RequiredResource Name="Styles"/>
+    <title>Quản lý tài sản</title>
+    <!-- bootstraps -->
+    <dot:RequiredResource Name="BootstrapCSS" />
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Không dùng Sidebars.css vì nó view tổng thể không ổn nên độ lại dashboard này-->
+    <dot:RequiredResource Name="DashBoardCSS" />
+    <!-- require resource:   style css riêng-->
+    <dot:RequiredResource Name="Styles" />
 </head>
 <body>
+    <!--HEADER-->
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">CA AN</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <div class="navbar-nav">
+            <div class="nav-item text-nowrap">
+                <dot:AuthenticatedView>
+                    <AuthenticatedTemplate>
+                        <dot:LinkButton Text="{resource: Texts.Label_SignOut}" Click="{command: SignOut()}" class="page-button-text" />
+                    </AuthenticatedTemplate>
+                    <NotAuthenticatedTemplate>
+                        <dot:RouteLink Text="{resource: Texts.Label_SignIn}" RouteName="Authentication_SignIn" class="page-button-text" />
+                    </NotAuthenticatedTemplate>
+                </dot:AuthenticatedView>
+            </div>
+        </div>
+    </header>
+    <!--/HEADER-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-lg-2 d-md-block bg-light">
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>TESTING PROJECT</span>
+                </h6>
+                <ul class="list-unstyled ps-0">
+               
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                            Cài đặt
+                        </button>
+                        
+                                <div class="collapse" id="account-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li class="nav-item"><dot:RouteLink RouteName="UsersRolesAssign" Text="User & Roles" /></li>
+                                        <%-- <li class="nav-item"><dot:RouteLink RouteName="SetUpRoles" Text="Setup" /></li> --%>
+                                    </ul>
+                                </div>                           
+                    </li>
+                    
 
- 	<div class="page-top">
-		<span class="page-top-left"> 
-            <dot:RouteLink Text="Home" RouteName="Default" class="page-button-text" />
-        <span class="clear-both"></span>
-		</span>
-		
-		<dot:AuthenticatedView>
-	        <AuthenticatedTemplate>
-		        <dot:LinkButton Text="{resource: Texts.Label_SignOut}" Click="{command: SignOut()}" class="page-button-text" />
-	        </AuthenticatedTemplate>
-			<NotAuthenticatedTemplate>
-	            <dot:RouteLink Text="{resource: Texts.Label_SignIn}" RouteName="Authentication_SignIn" class="page-button-text"/>
-			</NotAuthenticatedTemplate>
-		</dot:AuthenticatedView>
-	</div>
-	
 
-	<dot:ContentPlaceHolder ID="MainContent" />
+                </ul>
+              
+            </div>
+            <!-- Content-->
+            <main class="col-md-9  ms-sm-auto col-lg-10 px-md-4">
+                <%-- Đặt các nội dung trang ở đây --%>
+                <dot:ContentPlaceHolder ID="MainContent" />
+            </main>
+            <!--Content Het-->
+        </div>
+    </div>
+
+    <!-- OFFCANVAS -->
+    <!-- /OFFCANVAS -->
+    <!-- Bootstrap JS -->
+    <dot:RequiredResource Name="BootstrapBundleJS" />
+    <dot:RequiredResource Name="SideBarsJS" />
+
 
 </body>
 </html>

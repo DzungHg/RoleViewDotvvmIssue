@@ -52,7 +52,7 @@ namespace AssetMan_WebApp.Services
                 {
                     new Claim(ClaimTypes.Name, user.UserName),
                     new Claim(ClaimTypes.NameIdentifier, user.Id), 
-                    new Claim(ClaimTypes.Role, "administrator"), 
+                    new Claim(ClaimTypes.Role, "Anonymous"), 
                 },"Cookie");
             return identity;
         }

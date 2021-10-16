@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.ViewModel;
-using AssetMan.UseCases.Interfaces;
+using AssetMan.UseCases.ContactScreen;
 using AssetMan.UseCases.DTO;
 
 
@@ -12,10 +12,10 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
 {
     public class ContactCreateViewModel : AssetMan_WebApp.ViewModels.MasterPageViewModel
     {
-        private readonly IContactCreateUseCase contactCreateUseCase;
+        private readonly ICreateContactUseCase contactCreateUseCase;
        
 
-        public ContactCreateViewModel(IContactCreateUseCase contactCreateUseCase)
+        public ContactCreateViewModel(ICreateContactUseCase contactCreateUseCase)
         {
 
             this.contactCreateUseCase = contactCreateUseCase;

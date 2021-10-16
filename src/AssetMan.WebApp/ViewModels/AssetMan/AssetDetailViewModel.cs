@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.ViewModel;
-using AssetMan.UseCases.Interfaces;
+using AssetMan.UseCases.AssetScreen;
 using AssetMan.UseCases.DTO;
 
 namespace AssetMan_WebApp.ViewModels.AssetMan
 {
     public class AssetDetailViewModel : AssetMan_WebApp.ViewModels.MasterPageViewModel
     {
-        private readonly IAssetGetByIdUseCase ssetGetByIdUseCase;
+        private readonly IGetAssetByIdUseCase getAssetByIdUseCase;
        
 
-        public AssetDetailViewModel(IAssetGetByIdUseCase assetGetByIdUseCase)
+        public AssetDetailViewModel(IGetAssetByIdUseCase assetGetByIdUseCase)
         {
 
-            this.ssetGetByIdUseCase = assetGetByIdUseCase;
+            this.getAssetByIdUseCase = assetGetByIdUseCase;
             
 
         }
@@ -28,7 +28,7 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
             int id = 0;
             if (int.TryParse(Context.Parameters["Id"].ToString(), out id))
             {
-                this.Asset = ssetGetByIdUseCase.Execute(id);
+                this.Asset = getAssetByIdUseCase.Execute(id).Result;
             }
 
             //int id = Convert.ToInt32(Context.Parameters["id"]);

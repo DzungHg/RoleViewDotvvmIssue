@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.ViewModel;
 using System.ComponentModel.DataAnnotations;
-using AssetMan.UseCases.Interfaces;
+using AssetMan.UseCases.CategoryScreen;
 using AssetMan.UseCases.DTO;
 
 
@@ -13,10 +13,10 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
 {
     public class CategoryCreateViewModel : AssetMan_WebApp.ViewModels.MasterPageViewModel
     {
-        private readonly ICategoryCreateUseCase categoryCreateUseCase;
-        private readonly ICategoryIsIdAvailableUseCase categoryIsIdAvailableUseCase;
+        private readonly ICreateCategoryUseCase categoryCreateUseCase;
+        private readonly IIsCategoryIdAvailableUseCase categoryIsIdAvailableUseCase;
 
-        public CategoryCreateViewModel(ICategoryCreateUseCase categoryCreateUseCase, ICategoryIsIdAvailableUseCase categoryIsIdAvailableUseCase)
+        public CategoryCreateViewModel(ICreateCategoryUseCase categoryCreateUseCase, IIsCategoryIdAvailableUseCase categoryIsIdAvailableUseCase)
         {
 
             this.categoryCreateUseCase = categoryCreateUseCase;
@@ -44,7 +44,7 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
                 result = false;
                 this.ValidationMessages.Add("Mã danh mục thiếu");
             }
-            else if (!this.categoryIsIdAvailableUseCase.Execute(this.Category.Category_ID))
+            else if (!this.categoryIsIdAvailableUseCase.Execute(this.Category.Category_ID).Result)
             {
                 result = false;
                 this.ValidationMessages.Add("Mã danh mục đã tồn tại");

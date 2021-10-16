@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.ViewModel;
-using AssetMan.UseCases.Interfaces;
+using AssetMan.UseCases.LocationScreen;
 using AssetMan.UseCases.DTO;
 using AssetMan.UseCases.enums;
 
@@ -12,10 +12,10 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
 {
     public class LocationEditViewModel : AssetMan_WebApp.ViewModels.MasterPageViewModel
     {
-        private readonly ILocationUpdateUseCase locationUpdateUseCase;
-        private readonly ILocationGetByIdUseCase locationGetByIdUseCase;
+        private readonly IUpdateLocationUseCase locationUpdateUseCase;
+        private readonly IGetLocationByIdUseCase locationGetByIdUseCase;
 
-        public LocationEditViewModel(ILocationUpdateUseCase locationCreateUseCase, ILocationGetByIdUseCase locationGetByIdUseCase)
+        public LocationEditViewModel(IUpdateLocationUseCase locationCreateUseCase, IGetLocationByIdUseCase locationGetByIdUseCase)
         {
 
             this.locationUpdateUseCase = locationCreateUseCase;
@@ -30,7 +30,7 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
             int id = 0;
             if (int.TryParse(Context.Parameters["Id"].ToString(), out id))
             {
-                this.Location = this.locationGetByIdUseCase.Execute(id);
+                this.Location = this.locationGetByIdUseCase.Execute(id).Result;
             }
 
             //int id = Convert.ToInt32(Context.Parameters["id"]);

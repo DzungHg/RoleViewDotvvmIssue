@@ -1,5 +1,5 @@
 {
-  "applicationPhysicalPath": "F:\\My Programming Projects\\AssetManagement\\src\\AssetMan.WebApp",
+  "applicationPhysicalPath": "D:\\My Programming Projects\\RoleViewDotvvmIssue\\src\\AssetMan.WebApp",
   "markup": {
     "controls": [
       {
@@ -10,40 +10,43 @@
       {
         "tagPrefix": "bp",
         "namespace": "DotVVM.BusinessPack.Controls",
-        "assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f"
+        "assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f"
       },
       {
         "tagPrefix": "bp",
         "namespace": "DotVVM.BusinessPack.PostBackHandlers",
-        "assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f"
+        "assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f"
       },
       {
         "tagPrefix": "op",
         "namespace": "DotVVM.BusinessPack.Controls.FilterOperators",
-        "assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f"
+        "assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f"
       },
       {
         "tagPrefix": "fb",
         "namespace": "DotVVM.BusinessPack.Controls.FilterBuilderFields",
-        "assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f"
+        "assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f"
       },
       {
         "tagPrefix": "rtb",
         "namespace": "DotVVM.BusinessPack.Controls.RichTextBoxCommands",
-        "assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f"
+        "assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f"
       },
       {
         "tagPrefix": "tb",
         "namespace": "DotVVM.BusinessPack.Controls.ToolbarItems",
-        "assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f"
+        "assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f"
       }
     ],
     "assemblies": [
-      "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f"
+      "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f"
     ],
     "importedNamespaces": [
       {
         "namespace": "DotVVM.Framework.Binding.HelperNamespace"
+      },
+      {
+        "namespace": "System.Linq"
       },
       {
         "namespace": "DotVVM.BusinessPack.Controls.FilterBuilderFields"
@@ -54,6 +57,16 @@
     }
   },
   "routes": {
+    "SetUpRoles": {
+      "url": "authentication/cai-dat-admin",
+      "virtualPath": "Views/Authentication/SetUpRoles.dothtml",
+      "defaultValues": {}
+    },
+    "UsersRolesAssign": {
+      "url": "authentication/nguoi-dung-va-vai-tro",
+      "virtualPath": "Views/Authentication/UsersRolesAssign.dothtml",
+      "defaultValues": {}
+    },
     "AssetList": {
       "url": "asset/danh-sach-tai-san",
       "virtualPath": "Views/AssetMan/AssetList.dothtml",
@@ -132,6 +145,11 @@
     "Default": {
       "url": "",
       "virtualPath": "Views/Default.dothtml",
+      "defaultValues": {}
+    },
+    "Default - Copy": {
+      "url": "Default - Copy",
+      "virtualPath": "Views/Default - Copy.dothtml",
       "defaultValues": {}
     },
     "AssetMan_AssetCreate": {
@@ -214,9 +232,19 @@
       "virtualPath": "Views/Authentication/Register.dothtml",
       "defaultValues": {}
     },
+    "Authentication_SetUpRoles": {
+      "url": "Authentication/SetUpRoles",
+      "virtualPath": "Views/Authentication/SetUpRoles.dothtml",
+      "defaultValues": {}
+    },
     "Authentication_SignIn": {
       "url": "Authentication/SignIn",
       "virtualPath": "Views/Authentication/SignIn.dothtml",
+      "defaultValues": {}
+    },
+    "Authentication_UsersRolesAssign": {
+      "url": "Authentication/UsersRolesAssign",
+      "virtualPath": "Views/Authentication/UsersRolesAssign.dothtml",
       "defaultValues": {}
     }
   },
@@ -230,7 +258,7 @@
       "dotvvm.businesspack-svg": {
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
+          "Assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
           "Name": "DotVVM.BusinessPack.Resources.Icons.BusinessPack.svg",
           "DebugName": "DotVVM.BusinessPack.Resources.Icons.BusinessPack.svg"
         },
@@ -239,7 +267,7 @@
       "font-awesome-brands-svg": {
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
+          "Assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
           "Name": "DotVVM.BusinessPack.Resources.Icons.FontAwesomeBrands.svg",
           "DebugName": "DotVVM.BusinessPack.Resources.Icons.FontAwesomeBrands.svg"
         },
@@ -248,7 +276,7 @@
       "font-awesome-svg": {
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
+          "Assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
           "Name": "DotVVM.BusinessPack.Resources.Icons.FontAwesome.svg",
           "DebugName": "DotVVM.BusinessPack.Resources.Icons.FontAwesome.svg"
         },
@@ -269,14 +297,14 @@
       "dotvvm.internal": {
         "NomoduleLocation": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.Framework, Version=3.0.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Assembly": "DotVVM.Framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
           "Name": "DotVVM.Framework.obj.javascript.root_only_system.dotvvm-root.js",
           "DebugName": "DotVVM.Framework.obj.javascript.root_only_system_debug.dotvvm-root.js"
         },
         "Defer": true,
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.Framework, Version=3.0.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Assembly": "DotVVM.Framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
           "Name": "DotVVM.Framework.obj.javascript.root_only.dotvvm-root.js",
           "DebugName": "DotVVM.Framework.obj.javascript.root_only_debug.dotvvm-root.js"
         },
@@ -290,14 +318,14 @@
       "dotvvm.internal-spa": {
         "NomoduleLocation": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.Framework, Version=3.0.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Assembly": "DotVVM.Framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
           "Name": "DotVVM.Framework.obj.javascript.root_spa_system.dotvvm-root.js",
           "DebugName": "DotVVM.Framework.obj.javascript.root_spa_system_debug.dotvvm-root.js"
         },
         "Defer": true,
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.Framework, Version=3.0.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Assembly": "DotVVM.Framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
           "Name": "DotVVM.Framework.obj.javascript.root_spa.dotvvm-root.js",
           "DebugName": "DotVVM.Framework.obj.javascript.root_spa_debug.dotvvm-root.js"
         },
@@ -311,14 +339,14 @@
       "dotvvm.polyfill.bundle": {
         "NomoduleLocation": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.Framework, Version=3.0.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Assembly": "DotVVM.Framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
           "Name": "DotVVM.Framework.obj.javascript.polyfill.bundle.js",
           "DebugName": "DotVVM.Framework.obj.javascript.polyfill.bundle.js"
         },
         "Defer": true,
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.Framework, Version=3.0.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Assembly": "DotVVM.Framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
           "Name": "DotVVM.Framework.obj.javascript.polyfill.bundle.js",
           "DebugName": "DotVVM.Framework.obj.javascript.polyfill.bundle.js"
         },
@@ -341,11 +369,21 @@
         ],
         "RenderPosition": "Anywhere"
       },
+      "BootstrapBundleJS": {
+        "Defer": true,
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.UrlResourceLocation, DotVVM.Framework",
+          "Url": "~/Resources/assets/js/bootstrap.bundle.min.js",
+          "DebugUrl": "~/Resources/assets/js/bootstrap.bundle.min.js"
+        },
+        "MimeType": "text/javascript",
+        "RenderPosition": "Anywhere"
+      },
       "dotvvm.businesspack": {
         "Defer": true,
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
+          "Assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
           "Name": "DotVVM.BusinessPack.Resources.BusinessPack.js",
           "DebugName": "DotVVM.BusinessPack.Resources.BusinessPack.js"
         },
@@ -360,7 +398,7 @@
         "Defer": true,
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.Framework, Version=3.0.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Assembly": "DotVVM.Framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
           "Name": "DotVVM.Framework.Resources.Scripts.DotVVM.Debug.js",
           "DebugName": "DotVVM.Framework.Resources.Scripts.DotVVM.Debug.js"
         },
@@ -374,7 +412,7 @@
         "Defer": true,
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.Framework, Version=3.0.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Assembly": "DotVVM.Framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
           "Name": "DotVVM.Framework.Resources.Scripts.Globalize.globalize.min.js",
           "DebugName": "DotVVM.Framework.Resources.Scripts.Globalize.globalize.min.js"
         },
@@ -395,7 +433,7 @@
         "Defer": true,
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
+          "Assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
           "Name": "DotVVM.BusinessPack.Resources.Libs.jquery-sortable.min.js",
           "DebugName": "DotVVM.BusinessPack.Resources.Libs.jquery-sortable.min.js"
         },
@@ -409,9 +447,19 @@
         "Defer": true,
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.Framework, Version=3.0.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Assembly": "DotVVM.Framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
           "Name": "DotVVM.Framework.Resources.Scripts.knockout-latest.js",
           "DebugName": "DotVVM.Framework.Resources.Scripts.knockout-latest.debug.js"
+        },
+        "MimeType": "text/javascript",
+        "RenderPosition": "Anywhere"
+      },
+      "SideBarsJS": {
+        "Defer": true,
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.UrlResourceLocation, DotVVM.Framework",
+          "Url": "~/Resources/assets/js/sidebars.js",
+          "DebugUrl": "~/Resources/assets/js/sidebars.js"
         },
         "MimeType": "text/javascript",
         "RenderPosition": "Anywhere"
@@ -426,10 +474,26 @@
         },
         "MimeType": "text/css"
       },
+      "BootstrapCSS": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.UrlResourceLocation, DotVVM.Framework",
+          "Url": "~/Resources/assets/css/bootstrap.min.css",
+          "DebugUrl": "~/Resources/assets/css/bootstrap.min.css"
+        },
+        "MimeType": "text/css"
+      },
+      "DashBoardCSS": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.UrlResourceLocation, DotVVM.Framework",
+          "Url": "~/Resources/assets/css/dashboard.css",
+          "DebugUrl": "~/Resources/assets/css/dashboard.css"
+        },
+        "MimeType": "text/css"
+      },
       "dotvvm.businesspack-bootstrap4-css": {
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
+          "Assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
           "Name": "DotVVM.BusinessPack.Resources.BusinessPack-bootstrap4.css",
           "DebugName": "DotVVM.BusinessPack.Resources.BusinessPack-bootstrap4.css"
         },
@@ -438,7 +502,7 @@
       "dotvvm.businesspack-bootstrap4-ie-css": {
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
+          "Assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
           "Name": "DotVVM.BusinessPack.Resources.BusinessPack-bootstrap4-ie.css",
           "DebugName": "DotVVM.BusinessPack.Resources.BusinessPack-bootstrap4-ie.css"
         },
@@ -447,7 +511,7 @@
       "dotvvm.businesspack-default-css": {
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
+          "Assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
           "Name": "DotVVM.BusinessPack.Resources.BusinessPack-default.css",
           "DebugName": "DotVVM.BusinessPack.Resources.BusinessPack-default.css"
         },
@@ -456,7 +520,7 @@
       "dotvvm.businesspack-default-ie-css": {
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
+          "Assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
           "Name": "DotVVM.BusinessPack.Resources.BusinessPack-default-ie.css",
           "DebugName": "DotVVM.BusinessPack.Resources.BusinessPack-default-ie.css"
         },
@@ -465,7 +529,7 @@
       "dotvvm.businesspack-none-css": {
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
+          "Assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
           "Name": "DotVVM.BusinessPack.Resources.BusinessPack-none.css",
           "DebugName": "DotVVM.BusinessPack.Resources.BusinessPack-none.css"
         },
@@ -474,7 +538,7 @@
       "dotvvm.businesspack-none-ie-css": {
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.BusinessPack, Version=3.0.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
+          "Assembly": "DotVVM.BusinessPack, Version=3.2.0.0, Culture=neutral, PublicKeyToken=77e8efd43b7ae75f",
           "Name": "DotVVM.BusinessPack.Resources.BusinessPack-none-ie.css",
           "DebugName": "DotVVM.BusinessPack.Resources.BusinessPack-none-ie.css"
         },
@@ -483,9 +547,17 @@
       "dotvvm.fileUpload-css": {
         "Location": {
           "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
-          "Assembly": "DotVVM.Framework, Version=3.0.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Assembly": "DotVVM.Framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
           "Name": "DotVVM.Framework.Resources.Scripts.DotVVM.FileUpload.css",
           "DebugName": "DotVVM.Framework.Resources.Scripts.DotVVM.FileUpload.css"
+        },
+        "MimeType": "text/css"
+      },
+      "SideBarsCSS": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.UrlResourceLocation, DotVVM.Framework",
+          "Url": "~/Resources/assets/css/sidebars.css",
+          "DebugUrl": "~/Resources/assets/css/sidebars.css"
         },
         "MimeType": "text/css"
       },

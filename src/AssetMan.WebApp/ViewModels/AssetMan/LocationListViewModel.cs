@@ -5,17 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.ViewModel;
 using DotVVM.BusinessPack.Controls;
-using AssetMan.UseCases.Interfaces;
+using AssetMan.UseCases.LocationScreen;
 using AssetMan.UseCases.DTO;
 
 namespace AssetMan_WebApp.ViewModels.AssetMan
 {
     public class LocationListViewModel : AssetMan_WebApp.ViewModels.MasterPageViewModel
     {
-        private readonly ILocationViewAllUseCase locationViewAllUseCase;
+        private readonly IGetAllLocationsUseCase locationViewAllUseCase;
 
         
-        public LocationListViewModel(ILocationViewAllUseCase locationViewAllUseCase)
+        public LocationListViewModel(IGetAllLocationsUseCase locationViewAllUseCase)
         {
             this.locationViewAllUseCase = locationViewAllUseCase;
            
@@ -38,7 +38,7 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
             if (Locations.IsRefreshRequired)
             {
                
-                    Locations.Items = locationViewAllUseCase.Execute();
+                    Locations.Items = locationViewAllUseCase.Execute().Result;
                
             }
 

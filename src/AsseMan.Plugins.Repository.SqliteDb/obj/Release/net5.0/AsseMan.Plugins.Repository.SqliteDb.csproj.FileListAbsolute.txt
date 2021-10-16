@@ -1,0 +1,17 @@
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\bin\Release\net5.0\AsseMan.Plugins.Repository.SqliteDb.deps.json
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\bin\Release\net5.0\AsseMan.Plugins.Repository.SqliteDb.dll
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\bin\Release\net5.0\ref\AsseMan.Plugins.Repository.SqliteDb.dll
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\bin\Release\net5.0\AsseMan.Plugins.Repository.SqliteDb.pdb
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\bin\Release\net5.0\AssetMan.CoreBusiness.dll
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\bin\Release\net5.0\AssetMan.UseCases.dll
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\bin\Release\net5.0\AssetMan.CoreBusiness.pdb
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\bin\Release\net5.0\AssetMan.UseCases.pdb
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\obj\Release\net5.0\AsseMan.Plugins.Repository.SqliteDb.csproj.AssemblyReference.cache
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\obj\Release\net5.0\AsseMan.Plugins.Repository.SqliteDb.GeneratedMSBuildEditorConfig.editorconfig
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\obj\Release\net5.0\AsseMan.Plugins.Repository.SqliteDb.AssemblyInfoInputs.cache
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\obj\Release\net5.0\AsseMan.Plugins.Repository.SqliteDb.AssemblyInfo.cs
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\obj\Release\net5.0\AsseMan.Plugins.Repository.SqliteDb.csproj.CoreCompileInputs.cache
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\obj\Release\net5.0\AsseMan.Plugins.Repository.SqliteDb.csproj.CopyComplete
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\obj\Release\net5.0\AsseMan.Plugins.Repository.SqliteDb.dll
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\obj\Release\net5.0\ref\AsseMan.Plugins.Repository.SqliteDb.dll
+F:\My Programming Projects\AssetManagement\src\AsseMan.Plugins.Repository.SqliteDb\obj\Release\net5.0\AsseMan.Plugins.Repository.SqliteDb.pdb

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.ViewModel;
-using AssetMan.UseCases.Interfaces;
+using AssetMan.UseCases.LocationScreen;
 using AssetMan.UseCases.DTO;
 
 
@@ -13,10 +13,10 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
 {
     public class LocationCreateViewModel : AssetMan_WebApp.ViewModels.MasterPageViewModel
     {
-        private readonly ILocationCreateUseCase locationCreateUseCase;
+        private readonly ICreateLocationUseCase locationCreateUseCase;
        
 
-        public LocationCreateViewModel(ILocationCreateUseCase locationCreateUseCase)
+        public LocationCreateViewModel(ICreateLocationUseCase locationCreateUseCase)
         {
 
             this.locationCreateUseCase = locationCreateUseCase;

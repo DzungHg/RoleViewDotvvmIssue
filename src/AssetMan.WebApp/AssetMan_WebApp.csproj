@@ -10,17 +10,25 @@
     <None Remove="dotvvm_serialized_config.json.tmp" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DotVVM.AspNetCore" Version="3.0.1" />
+    <PackageReference Include="DotVVM" Version="3.2.1" />
+    <PackageReference Include="DotVVM.AspNetCore" Version="3.2.1" />
+    <PackageReference Include="DotVVM.BusinessPack.DynamicData" Version="3.2.0-preview01-final" />
+    <PackageReference Include="DotVVM.BusinessPack.Export" Version="3.2.0-preview01-final" />
+    <PackageReference Include="DotVVM.BusinessPack.Export.Csv" Version="3.2.0-preview01-final" />
+    <PackageReference Include="DotVVM.BusinessPack.Export.Excel" Version="3.2.0-preview01-final" />
+    <PackageReference Include="DotVVM.Utils.HtmlElements" Version="3.2.0-preview01-final" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.0" />
-    <PackageReference Include="DotVVM.BusinessPack" Version="3.0.0-preview03-final" />
+    <PackageReference Include="DotVVM.BusinessPack" Version="3.2.0-preview01-final" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.7" />
     <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.113" />
 
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AsseMan.Plugins.Repository.SqliteDb\AsseMan.Plugins.Repository.SqliteDb.csproj" />
+    <ProjectReference Include="..\AsseMan.Plugins.Repository.SqliteDb\AssetMan.Plugins.Repository.SqliteDb.csproj" />
     <ProjectReference Include="..\AssetMan.UseCases\AssetMan.UseCases.csproj" />
   </ItemGroup>
+ 
+  
   <ItemGroup>
     <Compile Update="Resources\Texts.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -33,5 +41,50 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Texts.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Resources\assets\css\bootstrap.min.css" />
+    <None Include="wwwroot\Resources\assets\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\Resources\assets\css\dashboard.css" />
+    <None Include="wwwroot\Resources\assets\css\fonts\mdi_fonts.css" />
+    <None Include="wwwroot\Resources\assets\css\fonts\roboto_base64.css" />
+    <None Include="wwwroot\Resources\assets\css\fonts\sourceCodePro_base64.css" />
+    <None Include="wwwroot\Resources\assets\css\sidebars.css" />
+    <None Include="wwwroot\Resources\assets\css\uikit-rtl.css" />
+    <None Include="wwwroot\Resources\assets\css\uikit-rtl.min.css" />
+    <None Include="wwwroot\Resources\assets\css\uikit.css" />
+    <None Include="wwwroot\Resources\assets\css\uikit.min.css" />
+    <None Include="wwwroot\Resources\assets\img\blank%402x.gif" />
+    <None Include="wwwroot\Resources\assets\img\blank.gif" />
+    <None Include="wwwroot\Resources\assets\img\favicons\android-chrome-192x192.png" />
+    <None Include="wwwroot\Resources\assets\img\favicons\android-chrome-512x512.png" />
+    <None Include="wwwroot\Resources\assets\img\favicons\apple-touch-icon.png" />
+    <None Include="wwwroot\Resources\assets\img\favicons\browserconfig.xml" />
+    <None Include="wwwroot\Resources\assets\img\favicons\favicon-16x16.png" />
+    <None Include="wwwroot\Resources\assets\img\favicons\favicon-32x32.png" />
+    <None Include="wwwroot\Resources\assets\img\favicons\favicon.ico" />
+    <None Include="wwwroot\Resources\assets\img\favicons\mstile-150x150.png" />
+    <None Include="wwwroot\Resources\assets\img\favicons\site.webmanifest" />
+    <None Include="wwwroot\Resources\assets\img\logo%402x.png" />
+    <None Include="wwwroot\Resources\assets\img\logo.png" />
+    <None Include="wwwroot\Resources\assets\img\logo.svg" />
+    <None Include="wwwroot\Resources\assets\img\logo_alt%402x.png" />
+    <None Include="wwwroot\Resources\assets\img\logo_alt.png" />
+    <None Include="wwwroot\Resources\assets\img\map-marker-main.svg" />
+    <None Include="wwwroot\Resources\assets\img\map-marker-outline.png" />
+    <None Include="wwwroot\Resources\assets\img\map-marker-outline.svg" />
+    <None Include="wwwroot\Resources\assets\img\map-marker.svg" />
+    <None Include="wwwroot\Resources\assets\img\spinner.gif" />
+    <None Include="wwwroot\Resources\assets\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\Resources\assets\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\Resources\assets\js\config.js" />
+    <None Include="wwwroot\Resources\assets\js\dashboard.js" />
+    <None Include="wwwroot\Resources\assets\js\sidebars.js" />
+    <None Include="wwwroot\Resources\assets\js\theme.js" />
+    <None Include="wwwroot\Resources\assets\js\theme.js.map" />
+    <None Include="wwwroot\Resources\assets\js\uikit-icons.js" />
+    <None Include="wwwroot\Resources\assets\js\uikit-icons.min.js" />
+    <None Include="wwwroot\Resources\assets\js\uikit.js" />
+    <None Include="wwwroot\Resources\assets\js\uikit.min.js" />
   </ItemGroup>
 </Project>

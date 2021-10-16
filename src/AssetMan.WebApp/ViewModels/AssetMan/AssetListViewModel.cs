@@ -5,19 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.ViewModel;
 using DotVVM.BusinessPack.Controls;
-using AssetMan.UseCases.Interfaces;
+using AssetMan.UseCases.AssetScreen;
+using AssetMan.UseCases.CategoryScreen;
 using AssetMan.UseCases.DTO;
 
 namespace AssetMan_WebApp.ViewModels.AssetMan
 {
     public class AssetListViewModel : AssetMan_WebApp.ViewModels.MasterPageViewModel
     {
-        private readonly IAssetViewAllUseCase assetViewAllUseCase;
-        private readonly IAssetsByCategoryUseCase assetsByCategoryUseCase;
-        private readonly ICategoryViewAllUseCase categoryViewAllUseCase;
+        private readonly IGetAllAssetViewsUseCase assetViewAllUseCase;
+        private readonly IGetAssetsByCategoryUseCase assetsByCategoryUseCase;
+        private readonly IGetAllCategoriesUseCase categoryViewAllUseCase;
        
-        public AssetListViewModel(IAssetViewAllUseCase assetViewAllUseCase, ICategoryViewAllUseCase categoryViewAllUseCase,
-            IAssetsByCategoryUseCase assetsByCategoryUseCase)
+        public AssetListViewModel(IGetAllAssetViewsUseCase assetViewAllUseCase, IGetAllCategoriesUseCase categoryViewAllUseCase,
+            IGetAssetsByCategoryUseCase assetsByCategoryUseCase)
         {
             this.assetViewAllUseCase = assetViewAllUseCase;
             this.categoryViewAllUseCase = categoryViewAllUseCase;
@@ -50,12 +51,12 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
             IQueryable<AssetViewDTO> asListQue;
             if (this.SelectedCategory != null)
             {
-                asListQue = assetsByCategoryUseCase.Execute(this.SelectedCategory.Category_ID).AsQueryable();
+                asListQue = assetsByCategoryUseCase.Execute(this.SelectedCategory.Category_ID).Result.AsQueryable();
                 this.Assets.LoadFromQueryable(asListQue);
             }
             else
             {
-                asListQue = assetViewAllUseCase.Execute().AsQueryable();
+                asListQue = assetViewAllUseCase.Execute().Result.AsQueryable();
                 this.Assets.LoadFromQueryable(asListQue);
             }
         }
@@ -65,7 +66,7 @@ namespace AssetMan_WebApp.ViewModels.AssetMan
         }
 
         [Bind(Direction.ClientToServer)]
-        public List<CategoryDTO> CateogryList => this.categoryViewAllUseCase.Execute();
+        public List<CategoryDTO> CateogryList => this.categoryViewAllUseCase.Execute().Result;
         public CategoryDTO SelectedCategory { get; set; }
 
         //Click sửa

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Label_SignIn" xml:space="preserve">
-    <value>Đăng nhập</value>
+    <value>Log in</value>
   </data>
   <data name="Label_SignOut" xml:space="preserve">
     <value>Sign out</value>
@@ -133,7 +133,7 @@
     <value>Password</value>
   </data>
   <data name="Label_Register" xml:space="preserve">
-    <value>Đăng ký</value>
+    <value>Register</value>
   </data>
   <data name="Label_UserName" xml:space="preserve">
     <value>User name</value>

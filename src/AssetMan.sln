@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetMan_WebApp", "..\..\..\zMy backups\C_SharpProjects\210906-AssetManagement\src\AssetMan.WebApp\AssetMan_WebApp.csproj", "{60D685C0-B0D2-4800-9700-224844552E18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetMan.CoreBusiness", "AssetMan.CoreBusiness\AssetMan.CoreBusiness.csproj", "{ECF45947-DA52-4A05-AC53-9F7E45566814}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetMan.UseCases", "AssetMan.UseCases\AssetMan.UseCases.csproj", "{3A0EE43D-79D4-41F8-AFEA-60971367FF43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{888B11EF-7584-4418-A8CB-A91A8E6E84BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetMan.Plugins.Repository.SqliteDb", "AsseMan.Plugins.Repository.SqliteDb\AssetMan.Plugins.Repository.SqliteDb.csproj", "{51F3D612-7669-4837-9833-CDF39E77CA01}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetMan_WebApp", "..\..\..\My Programming Projects\RoleViewDotvvmIssue\src\AssetMan.WebApp\AssetMan_WebApp.csproj", "{60D685C0-B0D2-4800-9700-224844552E18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,6 +19,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECF45947-DA52-4A05-AC53-9F7E45566814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF45947-DA52-4A05-AC53-9F7E45566814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF45947-DA52-4A05-AC53-9F7E45566814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF45947-DA52-4A05-AC53-9F7E45566814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A0EE43D-79D4-41F8-AFEA-60971367FF43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A0EE43D-79D4-41F8-AFEA-60971367FF43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A0EE43D-79D4-41F8-AFEA-60971367FF43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A0EE43D-79D4-41F8-AFEA-60971367FF43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F3D612-7669-4837-9833-CDF39E77CA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F3D612-7669-4837-9833-CDF39E77CA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F3D612-7669-4837-9833-CDF39E77CA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F3D612-7669-4837-9833-CDF39E77CA01}.Release|Any CPU.Build.0 = Release|Any CPU
 		{60D685C0-B0D2-4800-9700-224844552E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{60D685C0-B0D2-4800-9700-224844552E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60D685C0-B0D2-4800-9700-224844552E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -18,6 +38,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51F3D612-7669-4837-9833-CDF39E77CA01} = {888B11EF-7584-4418-A8CB-A91A8E6E84BA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82BB5763-295F-4D8E-8634-49DC9E7C6714}
